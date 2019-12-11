@@ -4,7 +4,7 @@ This SDK allows you to easily integrate the In The Game engagement platform in a
 The repository includes an example app that shows how to use the framework.
 
 
-## Instalation
+## Installation
 
 To install, simply drag the **InTheGameSDK.framework** file into your project. 
 
@@ -30,11 +30,11 @@ present(controller, animated: true, completion: nil)
 To load the video channel in a view to fit your custom layout, load the `ITGPlayerView` instead, and then add it as a subview (with constraints as needed): 
 
 ```
-let playerView = ITGPlayerView.instantiate(videoURL: exampleVideoURL)
+let playerView = ITGPlayerView.instantiate(videoURL: url)
 ```
 
 There are two additional parameters for further configuration: `language` and `allowsFullScreen`.
-You can check the example app for a pratical implementation.
+You can run the included project for a pratical implementation example.
 
 ## Notes
 
