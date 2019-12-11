@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HIf-ik-s7m">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--IN THE GAME-->
+        <scene sceneID="sWN-9d-QNc">
+            <objects>
+                <viewController title="IN THE GAME" id="dod-2X-NNo" customClass="HomeViewController" customModule="InTheGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dgB-UZ-wCn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the IN THE GAME integration demo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XTT-tX-6Ey">
+                                <rect key="frame" x="36" y="294" width="342" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="0.40075627850000001" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ym-VQ-YNV">
+                                <rect key="frame" x="36" y="426" width="342" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Y9S-tX-BbA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Default full-screen controller"/>
+                                <connections>
+                                    <action selector="openFullscreenVideo:" destination="dod-2X-NNo" eventType="touchUpInside" id="HHO-g1-M0n"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctd-Di-Xch">
+                                <rect key="frame" x="36" y="506" width="342" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="E4z-cE-9Tk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Custom integration example"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="O0U-XO-Fyw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="XTT-tX-6Ey" firstAttribute="trailing" secondItem="7Ym-VQ-YNV" secondAttribute="trailing" id="51H-CB-gUr"/>
+                            <constraint firstItem="XTT-tX-6Ey" firstAttribute="leading" secondItem="ctd-Di-Xch" secondAttribute="leading" id="5n1-oa-Hfd"/>
+                            <constraint firstItem="XTT-tX-6Ey" firstAttribute="leading" secondItem="ZrJ-dg-iHX" secondAttribute="leading" constant="36" id="5x5-ix-qQ7"/>
+                            <constraint firstItem="7Ym-VQ-YNV" firstAttribute="top" secondItem="XTT-tX-6Ey" secondAttribute="bottom" constant="72" id="8Cl-6p-r6F"/>
+                            <constraint firstItem="XTT-tX-6Ey" firstAttribute="leading" secondItem="7Ym-VQ-YNV" secondAttribute="leading" id="MyT-e2-p3B"/>
+                            <constraint firstItem="7Ym-VQ-YNV" firstAttribute="centerY" secondItem="dgB-UZ-wCn" secondAttribute="centerY" priority="200" id="cw5-3d-0qx"/>
+                            <constraint firstItem="XTT-tX-6Ey" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ZrJ-dg-iHX" secondAttribute="top" constant="16" id="htg-Ot-FTI"/>
+                            <constraint firstItem="ctd-Di-Xch" firstAttribute="top" secondItem="7Ym-VQ-YNV" secondAttribute="bottom" constant="36" id="w2C-ya-Ghm"/>
+                            <constraint firstItem="XTT-tX-6Ey" firstAttribute="trailing" secondItem="ctd-Di-Xch" secondAttribute="trailing" id="wXp-K6-Q2H"/>
+                            <constraint firstItem="XTT-tX-6Ey" firstAttribute="centerX" secondItem="dgB-UZ-wCn" secondAttribute="centerX" id="yLz-3g-4ZP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZrJ-dg-iHX"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="IN THE GAME" id="3jS-IN-hAp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9fv-vH-Zc3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-115.94202898550725" y="-300"/>
+        </scene>
+        <!--Integration example-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Integration example" id="BYZ-38-t0r" customClass="ExampleViewController" customModule="InTheGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mhb-2b-pR7">
+                                <rect key="frame" x="8" y="236" width="398" height="224"/>
+                                <color key="backgroundColor" white="0.86237351616767988" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="mhb-2b-pR7" secondAttribute="height" multiplier="16:9" priority="700" id="ECx-Fa-oJa"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flexible integration example with the ITGPlayerView" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqh-7b-2sz">
+                                <rect key="frame" x="50" y="540" width="314" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="0.40075627853881274" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.93915881849315064" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eqh-7b-2sz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ack-EQ-KLr"/>
+                            <constraint firstItem="mhb-2b-pR7" firstAttribute="top" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="32" id="ME5-MA-8tN"/>
+                            <constraint firstItem="eqh-7b-2sz" firstAttribute="top" secondItem="mhb-2b-pR7" secondAttribute="bottom" constant="80" id="NLE-zH-fVi"/>
+                            <constraint firstItem="eqh-7b-2sz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="UcA-ra-kk2"/>
+                            <constraint firstItem="mhb-2b-pR7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ew3-Y1-xYN"/>
+                            <constraint firstItem="mhb-2b-pR7" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" constant="-16" id="f5S-Q9-Pnz"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="mhb-2b-pR7" secondAttribute="bottom" constant="32" id="tds-Cf-VG2"/>
+                            <constraint firstItem="mhb-2b-pR7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" priority="500" constant="-100" id="w0Z-WT-QvI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Integration example" id="IHW-nz-0ND"/>
+                    <connections>
+                        <outlet property="videoContainer" destination="mhb-2b-pR7" id="7Dq-DW-9Ee"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="112.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qbG-W0-PCz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HIf-ik-s7m" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vBx-1Z-Wu9">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dod-2X-NNo" kind="relationship" relationship="rootViewController" id="Bgu-v2-nfU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kzz-Nu-nYW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1026.0869565217392" y="-300"/>
+        </scene>
+    </scenes>
+</document>
