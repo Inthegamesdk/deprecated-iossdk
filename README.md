@@ -23,14 +23,14 @@ To quickly show a full-screen controller of your interactive video channel:
 
 ```
 let url = URL(string: "<your video url>")!
-let controller = ITGPlayerViewController.instantiate(videoURL: url)
+let controller = ITGPlayerViewController.instantiate(videoURL: url, broadcasterName: "<your_itg_broadcaster_name>")
 present(controller, animated: true, completion: nil)
 ```
 
 To load the video channel in a view to fit your custom layout, load the `ITGPlayerView` instead, and then add it as a subview (with constraints as needed): 
 
 ```
-let playerView = ITGPlayerView.instantiate(videoURL: url)
+let playerView = ITGPlayerView.instantiate(videoURL: url, broadcasterName: "<your_itg_broadcaster_name>")
 ```
 
 There are two additional parameters for further configuration: `language` and `allowsFullScreen`.
