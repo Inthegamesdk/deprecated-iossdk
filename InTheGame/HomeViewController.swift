@@ -9,7 +9,7 @@
 import UIKit
 import InTheGameSDK
 
-let exampleVideoURL = URL(string: "https://media.inthegame.io/uploads/videos/itgdemo5clips.mp4?123123")!
+let exampleVideoURL = URL(string: "https://media.inthegame.io/uploads/videos/4engagementvideo.mp4")!
 
 class HomeViewController: UIViewController {
 
@@ -18,7 +18,7 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func openFullscreenVideo(_ sender: Any) {
-        let controller = ITGPlayerViewController.instantiate(videoURL: exampleVideoURL)
+        let controller = ITGPlayerViewController.instantiate(videoURL: exampleVideoURL, broadcasterName: "demos")
         present(controller, animated: true, completion: nil)
     }
 }
