@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		acV7naUQOM/alw6Z4VDCMxyruy8=
+		4OTqL57jDgDr+QKg9yhL4450n/g=
 		</data>
 		<key>Headers/InTheGameSDK-Swift.h</key>
 		<data>
-		2z3IDzMcFUaEFUO2HaOkbHnQa1c=
+		JU1UCtRgIU/P5+oli5PukinaIps=
 		</data>
 		<key>Headers/InTheGameSDK.h</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>ITG.storyboardc/G8R-zd-o67-view-6Ir-Uw-TRk.nib/objects-13.0+.nib</key>
 		<data>
-		PdSCr+z3r1aet9hhwbgAQshAiho=
+		tP16Xk9tu4Ifg+Gw9I/otuR0kn4=
 		</data>
 		<key>ITG.storyboardc/G8R-zd-o67-view-6Ir-Uw-TRk.nib/runtime.nib</key>
 		<data>
-		dt8tOiLULDUaA3gqk8ErRzTKdn8=
+		aA7Bro1zohdzAqO78Zua0dA8Mnk=
 		</data>
 		<key>ITG.storyboardc/Info.plist</key>
 		<data>
@@ -30,31 +30,23 @@
 		</data>
 		<key>ITG.storyboardc/InteractiveVideo.nib/objects-13.0+.nib</key>
 		<data>
-		Ou2HZHV2b5702HTvuypINUH0mxs=
+		ZaRPAuwz6zk1+RoZcO7E1j6cgSY=
 		</data>
 		<key>ITG.storyboardc/InteractiveVideo.nib/runtime.nib</key>
 		<data>
-		QIY7Q+RPljrxV37zYMbvNvDpp+c=
+		YskSXCYo6oE5CRlfRZt/DhpldXg=
 		</data>
 		<key>ITGPlayerView.nib/objects-13.0+.nib</key>
 		<data>
-		6WERfv5EkByoXGRrnM/yILMV0X0=
+		4vec08C6pcrNo/noOMYyqHqWg+s=
 		</data>
 		<key>ITGPlayerView.nib/runtime.nib</key>
 		<data>
-		BfeiLsk+Ns1WsrIh1mg7s9V83Fc=
+		1lsexrmK+NxVZFPh85oeUVGjUrU=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		hmiPlxIZEGs8axPXjDztsSbuegQ=
-		</data>
-		<key>Modules/InTheGameSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
-		<data>
-		skvcUSNEm/GyIsKqX4hJnaipHgQ=
-		</data>
-		<key>Modules/InTheGameSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
-		<data>
-		bEwta9zSZGK2HMRKEwb270m9zOA=
+		vuab7LqWOzvFG3yc/jfaDKrF8DA=
 		</data>
 		<key>Modules/InTheGameSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -62,7 +54,7 @@
 		</data>
 		<key>Modules/InTheGameSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		bEwta9zSZGK2HMRKEwb270m9zOA=
+		33faWqD5w5F0IZWQmSuE7eIGWzE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -75,14 +67,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ul6YkMj4DOMwWlkRV4I16a5NJqNXSkBDGVw4LDBkELs=
+			fqM+fBdr/g0hjpaxGyoer5IH7R1Wpj7dDl8dgRngGso=
 			</data>
 		</dict>
 		<key>Headers/InTheGameSDK-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+1mjAH1axjCIOy1q9vER8cCmRiw+Pb8gSO7fFLZSLoU=
+			4+UGViEQ+fCe8LFheEipe7PStMMWTj3wslN5xMwmdKE=
 			</data>
 		</dict>
 		<key>Headers/InTheGameSDK.h</key>
@@ -96,14 +88,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2WQ/1gdEUlGimynDb0o5AU2AhihZxfh9RjAqTw7zsR0=
+			IlmLqwvV/OZryQmkyZ71fLyMZIT6nJNI8VKCNYALAVE=
 			</data>
 		</dict>
 		<key>ITG.storyboardc/G8R-zd-o67-view-6Ir-Uw-TRk.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5O8FtTQr7P17Ol0qwHOHPNZTbWxnTNegAmKaMfdV0hk=
+			DWntROA0IUpqTvo+QJozCxHz+KaY23UPtbdAeylg9RE=
 			</data>
 		</dict>
 		<key>ITG.storyboardc/Info.plist</key>
@@ -117,42 +109,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3vpfX/irtgT0Ao+RVkLidb1ci+Q8eu7IOVx9/SgeSTw=
+			sAfBZQiFiiuR0FeKsdz0KZx6mrLEo2fQ4M/+TEUfIRA=
 			</data>
 		</dict>
 		<key>ITG.storyboardc/InteractiveVideo.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lXN0l0ZgAcDUD/FiwXD39lmlmQTKyhpDfu/QY6VULG8=
+			En59WRdnb6U7L6TxfyQlix5chM/3eTeksaaO3H0uVFs=
 			</data>
 		</dict>
 		<key>ITGPlayerView.nib/objects-13.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			chz/rfLJ4/zz92+4Vftv1SB6p236e7PPKufyzde9s54=
+			MlmgtQ6NIZ5+4x1YglDlEhxQcx5KYUntbpx9iTSL9E4=
 			</data>
 		</dict>
 		<key>ITGPlayerView.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zuRWzTzqYJVp4ydd2qLcKw3h8sQo9NXZwNefin79L8U=
-			</data>
-		</dict>
-		<key>Modules/InTheGameSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			GMvp1dZQOmLb6LBqorxBmN2TS9JznHtnjGzQZ2Hoa20=
-			</data>
-		</dict>
-		<key>Modules/InTheGameSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			EPDYXuPAlq2GTERQMbkd9XFQlzrX84ZyUmKVuNbCbKQ=
+			Zfn7akGVwetYl97iZUrrrqnnNzCcAIXX5HnY2h/kiXg=
 			</data>
 		</dict>
 		<key>Modules/InTheGameSDK.swiftmodule/arm64.swiftdoc</key>
@@ -166,7 +144,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EPDYXuPAlq2GTERQMbkd9XFQlzrX84ZyUmKVuNbCbKQ=
+			lSRFgUF6NGjc+74ptZIddic/ADQlLnNrBEn9TOzLwfI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

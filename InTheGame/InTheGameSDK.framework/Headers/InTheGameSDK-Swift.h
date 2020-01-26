@@ -239,6 +239,8 @@ SWIFT_CLASS("_TtC12InTheGameSDK23ITGPlayerViewController")
 
 
 
+
+
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
 #endif
