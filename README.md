@@ -1,4 +1,4 @@
-# iossdk
+# In The Game iOS SDK
 
 This SDK allows you to easily integrate the In The Game engagement platform in a video player in your iOS app.
 The repository includes an example app that shows how to use the framework.
