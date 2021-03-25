@@ -36,6 +36,26 @@ let playerView = ITGPlayerView.instantiate(videoURL: url, broadcasterName: "<you
 There are two additional parameters for further configuration: `language` and `allowsFullScreen`.
 You can run the included project for a pratical implementation example.
 
-## Notes
+## Overlay mode
 
-The framework contains both device and simulator modules, so keep in mind that to upload it to the app store, you'll need to add a script to remove the simulator modules for release.
+The overlay option allows for maximum flexibility - you create a view for the ITG interactive Overlay and position it over your video player as you see fit.
+You can create it as:
+```
+let overlay = ITGOverlayView(videoURL: videoURL, broadcasterName: <your_itg_broadcaster_name>")
+```
+Since you are using your own video player, you will need to send playback updates manually to the overlay:
+```
+overlay.videoPlaying()
+overlay.videoPaused()
+overlay.videoStopped()
+overlay.updateVideoTime(seconds: 60)
+```
+
+The overlay content will be sized to take the available space while fitting a specified video aspect. The default is the standard 16:9. For other video formats, you can set the aspect ratio as:
+```
+overlay.setAspectRatio(4/3)
+```
+
+The overlay will only assume touch events when they are over its content. Touches on the empty area will be passed to the next view, useful for video controls.
+
+You can check the `OverlayExampleViewController` in the example app for an integration sample.
