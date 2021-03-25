@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,8 +13,10 @@
 		6DACAF69239FF81D00443D25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DACAF67239FF81D00443D25 /* LaunchScreen.storyboard */; };
 		6DACAF72239FF86800443D25 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DACAF70239FF86800443D25 /* ExampleViewController.swift */; };
 		6DACAF73239FF86800443D25 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DACAF71239FF86800443D25 /* HomeViewController.swift */; };
-		6DACAF76239FF89B00443D25 /* InTheGameSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DACAF74239FF89700443D25 /* InTheGameSDK.framework */; };
-		6DACAF77239FF89B00443D25 /* InTheGameSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DACAF74239FF89700443D25 /* InTheGameSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6DCE1ABE260CFDBC0000ECE0 /* OverlayExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCE1ABD260CFDBC0000ECE0 /* OverlayExampleViewController.swift */; };
+		6DCE1AC0260CFFB90000ECE0 /* AVPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCE1ABF260CFFB90000ECE0 /* AVPlayerView.swift */; };
+		6DE93FEC26053508005AB3A9 /* InTheGameSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DE93FEA26053502005AB3A9 /* InTheGameSDK.xcframework */; };
+		6DE93FED26053508005AB3A9 /* InTheGameSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DE93FEA26053502005AB3A9 /* InTheGameSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +26,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				6DACAF77239FF89B00443D25 /* InTheGameSDK.framework in Embed Frameworks */,
+				6DE93FED26053508005AB3A9 /* InTheGameSDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -40,7 +42,9 @@
 		6DACAF6A239FF81D00443D25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DACAF70239FF86800443D25 /* ExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
 		6DACAF71239FF86800443D25 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		6DACAF74239FF89700443D25 /* InTheGameSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InTheGameSDK.framework; sourceTree = "<group>"; };
+		6DCE1ABD260CFDBC0000ECE0 /* OverlayExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayExampleViewController.swift; sourceTree = "<group>"; };
+		6DCE1ABF260CFFB90000ECE0 /* AVPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerView.swift; sourceTree = "<group>"; };
+		6DE93FEA26053502005AB3A9 /* InTheGameSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = InTheGameSDK.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DACAF76239FF89B00443D25 /* InTheGameSDK.framework in Frameworks */,
+				6DE93FEC26053508005AB3A9 /* InTheGameSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,11 +81,13 @@
 				6DACAF5C239FF81B00443D25 /* AppDelegate.swift */,
 				6DACAF70239FF86800443D25 /* ExampleViewController.swift */,
 				6DACAF71239FF86800443D25 /* HomeViewController.swift */,
+				6DCE1ABD260CFDBC0000ECE0 /* OverlayExampleViewController.swift */,
+				6DCE1ABF260CFFB90000ECE0 /* AVPlayerView.swift */,
 				6DACAF62239FF81B00443D25 /* Main.storyboard */,
 				6DACAF65239FF81D00443D25 /* Assets.xcassets */,
 				6DACAF67239FF81D00443D25 /* LaunchScreen.storyboard */,
 				6DACAF6A239FF81D00443D25 /* Info.plist */,
-				6DACAF74239FF89700443D25 /* InTheGameSDK.framework */,
+				6DE93FEA26053502005AB3A9 /* InTheGameSDK.xcframework */,
 			);
 			path = InTheGame;
 			sourceTree = "<group>";
@@ -160,7 +166,9 @@
 			files = (
 				6DACAF73239FF86800443D25 /* HomeViewController.swift in Sources */,
 				6DACAF72239FF86800443D25 /* ExampleViewController.swift in Sources */,
+				6DCE1ABE260CFDBC0000ECE0 /* OverlayExampleViewController.swift in Sources */,
 				6DACAF5D239FF81B00443D25 /* AppDelegate.swift in Sources */,
+				6DCE1AC0260CFFB90000ECE0 /* AVPlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +314,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 6KKS6W5LF2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/InTheGame",
@@ -317,7 +325,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.inthegame.InTheGame;
+				PRODUCT_BUNDLE_IDENTIFIER = com.syncedapps.InTheGameExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -330,7 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 6KKS6W5LF2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/InTheGame",
@@ -341,7 +349,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.inthegame.InTheGame;
+				PRODUCT_BUNDLE_IDENTIFIER = com.syncedapps.InTheGameExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

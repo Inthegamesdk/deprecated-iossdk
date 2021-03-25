@@ -18,7 +18,7 @@ class ExampleViewController: UIViewController {
         super.viewDidLoad()
 
         //instantiate the ITGPlayerView
-        let playerView = ITGPlayerView.instantiate(videoURL: exampleVideoURL, broadcasterName: "demos")
+        let playerView = ITGPlayerView.instantiate(videoURL: exampleVideoURL, broadcasterName: broadcaster, devMode: false)
         //set up the frame or contraints
         playerView.frame = videoContainer.bounds
         playerView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
