@@ -4,13 +4,9 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>.DS_Store</key>
-		<data>
-		rQr1VP1z8fqj8behF8GdtZi44Ec=
-		</data>
 		<key>Assets.car</key>
 		<data>
-		6pnbW+jmd+Kqr0vpyZWDon0qKHk=
+		KDfIR+vDYFqBTo6mKuCN0uUhBg4=
 		</data>
 		<key>Headers/InTheGameSDK-Swift.h</key>
 		<data>
@@ -22,7 +18,7 @@
 		</data>
 		<key>ITG.storyboardc/G8R-zd-o67-view-6Ir-Uw-TRk.nib</key>
 		<data>
-		uDafyMaOfNBv8Qq3dmhVIjBIpcM=
+		KqSw5FwWpHobH+XiLkTmw9JyWKs=
 		</data>
 		<key>ITG.storyboardc/Info.plist</key>
 		<data>
@@ -30,23 +26,15 @@
 		</data>
 		<key>ITG.storyboardc/InteractiveVideo.nib</key>
 		<data>
-		j5CDYwq3L+bNnF2ZSXPOrnsok1I=
+		t4fp9h6jm5cTKcaZvrsFIBQ2++c=
 		</data>
 		<key>ITGPlayerView.nib</key>
 		<data>
-		eE9hCcEO9kRXXcB67ST5LyAW0YE=
+		25CkKzRb3jkXYjBFKoa7MPfc4mE=
 		</data>
 		<key>Info.plist</key>
 		<data>
 		cZndK4k7PGxoEfFwTZnEEsfptjM=
-		</data>
-		<key>Modules/.DS_Store</key>
-		<data>
-		rk24czUN/3MeLAuP8CHW+NVYFV8=
-		</data>
-		<key>Modules/InTheGameSDK.swiftmodule/.DS_Store</key>
-		<data>
-		SK4DR+Uuo864blvKIvmwiGwMpXM=
 		</data>
 		<key>Modules/InTheGameSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
@@ -91,7 +79,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			v+Aoej8SRReqvTHA4GZ0KImDHO5yYscHZ3tIpV55qqE=
+			8kemv0CGxtfxQdtjs4fXyHyXV8pcwChApgj7tJ3DAy8=
 			</data>
 		</dict>
 		<key>Headers/InTheGameSDK-Swift.h</key>
@@ -112,7 +100,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0WXYHSc6E/Mb6nffY7K3yQW/DFafBRpb3H+3NnVYHX0=
+			dvL/y4pgP1Ow8Hzrr9GvopPtdWHAKrDqtOZ0pIBdRNU=
 			</data>
 		</dict>
 		<key>ITG.storyboardc/Info.plist</key>
@@ -126,14 +114,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			P9thytus85rwKB8+1gODapdlJm/VPuikLzLQzm9Cq5g=
+			swnCTDFWnf8W49/nBd37oURe7WbbPqOke5Nyk+CnKvA=
 			</data>
 		</dict>
 		<key>ITGPlayerView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ib46vnSYIIpDI6zvpNje71dFjw4YMRBy/TcpnFvpLwg=
+			r4S5FbSaOSQxmwwY2eqbcnUgpeq2KoVlQSZ2Vut3Jr4=
 			</data>
 		</dict>
 		<key>Modules/InTheGameSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>

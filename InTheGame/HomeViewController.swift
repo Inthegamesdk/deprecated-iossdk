@@ -19,7 +19,7 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func openFullscreenVideo(_ sender: Any) {
-        let controller = ITGPlayerViewController.instantiate(videoURL: exampleVideoURL, broadcasterName: broadcaster, devMode: false)
+        let controller = ITGPlayerViewController.instantiate(videoURL: exampleVideoURL, broadcasterName: broadcaster, devMode: true)
         present(controller, animated: true, completion: nil)
     }
 }

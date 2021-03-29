@@ -4,13 +4,9 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>.DS_Store</key>
-		<data>
-		bEwYIjEU8rblNgaQEQ2oFeVbaSI=
-		</data>
 		<key>Assets.car</key>
 		<data>
-		Rsu5o/ZTDtUHuziTXXpU9d97T+M=
+		RR93CAi6fqczaN8fkVWC2l4UX70=
 		</data>
 		<key>Headers/InTheGameSDK-Swift.h</key>
 		<data>
@@ -22,7 +18,7 @@
 		</data>
 		<key>ITG.storyboardc/G8R-zd-o67-view-6Ir-Uw-TRk.nib</key>
 		<data>
-		q/o52Lrv63HmndviXRoM6Orc0YU=
+		M0fo9oEHSYmxLSe2XMP4huvcOkc=
 		</data>
 		<key>ITG.storyboardc/Info.plist</key>
 		<data>
@@ -30,11 +26,11 @@
 		</data>
 		<key>ITG.storyboardc/InteractiveVideo.nib</key>
 		<data>
-		JgcfN0o418aVq6wTxNAXBVwfQaI=
+		8l3Sd3F8sZyOsA/1JumeMEBIuKc=
 		</data>
 		<key>ITGPlayerView.nib</key>
 		<data>
-		8f4JLveIU2NrPDcRfmFAJwpdfl0=
+		FxLpFRZTByPR5GlYBCWoOyQqbk4=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -115,7 +111,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Bo5Y/z4/PpxVE2xdsDzd75fEZ6BqyjuYnGbgkn9FgpY=
+			U1mlNh/SL+A/cGWl6ikKaTG7YiycJ62ecOt0qOEBNPs=
 			</data>
 		</dict>
 		<key>Headers/InTheGameSDK-Swift.h</key>
@@ -136,7 +132,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mzvezwkrE8MhW0t2oXueEw3IRDEOhW8bu++tb3aL4Tc=
+			StTevZeKnqB4+L93RuWHDM5IgIfo6ZS9Yis4u+OcK1w=
 			</data>
 		</dict>
 		<key>ITG.storyboardc/Info.plist</key>
@@ -150,14 +146,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y67efWT2EgAKuNdofBpT/xyl+TPROyxD96qZXgFvMV0=
+			D0kFUUjIf6/EMdn1frTy69Ai0HOGgORpv9lb0ks0wkk=
 			</data>
 		</dict>
 		<key>ITGPlayerView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			N8f9H3uqHCDjx8KzEWQgXAsYCb4BVTuP7Ib+34dyol0=
+			Fmcq6F/59vpVCx1xIBiiSoToPtf0aVPW93MbwzRXl28=
 			</data>
 		</dict>
 		<key>Modules/InTheGameSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
