@@ -41,7 +41,7 @@ You can run the included project for a pratical implementation example.
 The overlay option allows for maximum flexibility - you create a view for the ITG interactive Overlay and position it over your video player as you see fit.
 You can create it as:
 ```
-let overlay = ITGOverlayView(videoURL: videoURL, broadcasterName: <your_itg_broadcaster_name>")
+let overlay = ITGOverlayView(videoURL: videoURL.absoluteString, broadcasterName: <your_itg_broadcaster_name>")
 ```
 Since you are using your own video player, you will need to send playback updates manually to the overlay:
 ```
