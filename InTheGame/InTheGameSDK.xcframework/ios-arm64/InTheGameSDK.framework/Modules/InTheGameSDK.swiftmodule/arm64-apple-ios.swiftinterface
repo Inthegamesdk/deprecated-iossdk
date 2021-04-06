@@ -9,7 +9,7 @@ import Swift
 import UIKit
 import WebKit
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ITGOverlayView : UIKit.UIView, WebKit.WKUIDelegate, WebKit.WKNavigationDelegate, UIKit.UIGestureRecognizerDelegate {
-  public init(videoURL: Foundation.URL, broadcasterName: Swift.String? = nil, language: Swift.String = "en", devMode: Swift.Bool = false)
+  public init(videoURL: Swift.String, broadcasterName: Swift.String? = nil, language: Swift.String = "en", devMode: Swift.Bool = false)
   public func setAspectRatio(_ ratio: CoreGraphics.CGFloat)
   public func videoPlaying()
   public func videoPaused()

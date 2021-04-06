@@ -62,7 +62,7 @@ class OverlayExampleViewController: UIViewController {
     
     func loadOverlay() {
         //load the ITG overlay over your video player
-        let view = ITGOverlayView(videoURL: exampleVideoURL, broadcasterName: broadcaster, devMode: true)
+        let view = ITGOverlayView(videoURL: exampleVideoURL.absoluteString, broadcasterName: broadcaster, devMode: true)
         view.frame = playerContainer.bounds
         view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         view.translatesAutoresizingMaskIntoConstraints = true
