@@ -58,4 +58,13 @@ overlay.setAspectRatio(4/3)
 
 The overlay will only assume touch events when they are over its content. Touches on the empty area will be passed to the next view, useful for video controls.
 
+The delegate methods allow you to detect when an activity is opened or closed:
+```
+overlay.delegate = self
+```
+```
+func didOpenActivity()
+func didCloseActivity()
+```
+
 You can check the `OverlayExampleViewController` in the example app for an integration sample.
