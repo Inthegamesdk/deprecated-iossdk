@@ -224,6 +224,13 @@ SWIFT_CLASS("_TtC12InTheGameSDK14ITGOverlayView")
 - (void)webView:(WKWebView * _Nonnull)webView decidePolicyForNavigationResponse:(WKNavigationResponse * _Nonnull)navigationResponse decisionHandler:(void (^ _Nonnull)(WKNavigationResponsePolicy))decisionHandler;
 @end
 
+@class WKUserContentController;
+@class WKScriptMessage;
+
+@interface ITGOverlayView (SWIFT_EXTENSION(InTheGameSDK)) <WKScriptMessageHandler>
+- (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
+@end
+
 @class UIGestureRecognizer;
 
 SWIFT_CLASS("_TtC12InTheGameSDK13ITGPlayerView")
@@ -237,8 +244,6 @@ SWIFT_CLASS("_TtC12InTheGameSDK13ITGPlayerView")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class WKUserContentController;
-@class WKScriptMessage;
 
 @interface ITGPlayerView (SWIFT_EXTENSION(InTheGameSDK)) <WKScriptMessageHandler>
 - (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;

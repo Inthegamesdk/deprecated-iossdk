@@ -8,7 +8,12 @@ import Foundation
 import Swift
 import UIKit
 import WebKit
+public protocol ITGOverlayDelegate : ObjectiveC.NSObject {
+  func didOpenActivity()
+  func didCloseActivity()
+}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ITGOverlayView : UIKit.UIView, WebKit.WKUIDelegate, WebKit.WKNavigationDelegate, UIKit.UIGestureRecognizerDelegate {
+  weak public var delegate: InTheGameSDK.ITGOverlayDelegate?
   public init(videoURL: Swift.String, broadcasterName: Swift.String? = nil, language: Swift.String = "en", devMode: Swift.Bool = false)
   public func setAspectRatio(_ ratio: CoreGraphics.CGFloat)
   public func videoPlaying()
@@ -20,6 +25,9 @@ import WebKit
   @objc override dynamic public func point(inside point: CoreGraphics.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
   @objc public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationResponse: WebKit.WKNavigationResponse, decisionHandler: @escaping (WebKit.WKNavigationResponsePolicy) -> Swift.Void)
   @objc deinit
+}
+extension ITGOverlayView : WebKit.WKScriptMessageHandler {
+  @objc dynamic public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
 }
 @objc @_inheritsConvenienceInitializers public class ITGPlayerView : UIKit.UIView, WebKit.WKUIDelegate, WebKit.WKNavigationDelegate, UIKit.UIGestureRecognizerDelegate {
   public class func instantiate(videoURL: Foundation.URL, broadcasterName: Swift.String? = nil, language: Swift.String = "en", allowsFullScreen: Swift.Bool = true, devMode: Swift.Bool = false) -> InTheGameSDK.ITGPlayerView

@@ -67,6 +67,9 @@ class OverlayExampleViewController: UIViewController {
         view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         view.translatesAutoresizingMaskIntoConstraints = true
         playerContainer.addSubview(view)
+        
+        //set the delegate if you want to be notified of overlay activity
+        view.delegate = self
         overlay = view
 
 //        overlay.setAspectRatio(22/9)
@@ -97,5 +100,15 @@ class OverlayExampleViewController: UIViewController {
             }
         })
         
+    }
+}
+
+extension OverlayExampleViewController: ITGOverlayDelegate {
+    func didOpenActivity() {
+        print("itg open activity")
+    }
+    
+    func didCloseActivity() {
+        print("itg close activity")
     }
 }
