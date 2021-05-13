@@ -34,6 +34,9 @@ let playerView = ITGPlayerView.instantiate(videoURL: url, broadcasterName: "<you
 ```
 
 There are two additional parameters for further configuration: `language` and `allowsFullScreen`.
+
+If you want to connect ITG content with your user's account, there are other parameters in the `load()` method where you can specify your user's ID and display name. The variables are called `userBroadcasterForeignID` and `userInitialName`.
+
 You can run the included project for a pratical implementation example.
 
 ## Overlay mode
