@@ -14,7 +14,7 @@ public protocol ITGOverlayDelegate : ObjectiveC.NSObject {
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ITGOverlayView : UIKit.UIView, WebKit.WKUIDelegate, WebKit.WKNavigationDelegate, UIKit.UIGestureRecognizerDelegate {
   weak public var delegate: InTheGameSDK.ITGOverlayDelegate?
-  public init(videoURL: Swift.String, broadcasterName: Swift.String? = nil, language: Swift.String = "en", devMode: Swift.Bool = false)
+  public init(videoURL: Swift.String, broadcasterName: Swift.String? = nil, language: Swift.String = "en", devMode: Swift.Bool = false, userBroadcasterForeignID: Swift.String? = nil, userInitialName: Swift.String? = nil)
   public func setAspectRatio(_ ratio: CoreGraphics.CGFloat)
   public func videoPlaying()
   public func videoPaused()
@@ -30,7 +30,7 @@ extension ITGOverlayView : WebKit.WKScriptMessageHandler {
   @objc dynamic public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
 }
 @objc @_inheritsConvenienceInitializers public class ITGPlayerView : UIKit.UIView, WebKit.WKUIDelegate, WebKit.WKNavigationDelegate, UIKit.UIGestureRecognizerDelegate {
-  public class func instantiate(videoURL: Foundation.URL, broadcasterName: Swift.String? = nil, language: Swift.String = "en", allowsFullScreen: Swift.Bool = true, devMode: Swift.Bool = false) -> InTheGameSDK.ITGPlayerView
+  public class func instantiate(videoURL: Foundation.URL, broadcasterName: Swift.String? = nil, language: Swift.String = "en", allowsFullScreen: Swift.Bool = true, devMode: Swift.Bool = false, userBroadcasterForeignID: Swift.String? = nil, userInitialName: Swift.String? = nil) -> InTheGameSDK.ITGPlayerView
   @objc override dynamic public func awakeFromNib()
   @objc override dynamic public func layoutSubviews()
   @objc public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
@@ -46,7 +46,7 @@ extension ITGPlayerView : WebKit.WKScriptMessageHandler {
 }
 @objc @_inheritsConvenienceInitializers public class ITGPlayerViewController : UIKit.UIViewController {
   public var playerView: InTheGameSDK.ITGPlayerView?
-  public class func instantiate(videoURL: Foundation.URL, broadcasterName: Swift.String? = nil, language: Swift.String = "en", devMode: Swift.Bool = false) -> InTheGameSDK.ITGPlayerViewController
+  public class func instantiate(videoURL: Foundation.URL, broadcasterName: Swift.String? = nil, language: Swift.String = "en", devMode: Swift.Bool = false, userBroadcasterForeignID: Swift.String? = nil, userInitialName: Swift.String? = nil) -> InTheGameSDK.ITGPlayerViewController
   @objc override dynamic public func viewDidLoad()
   @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
