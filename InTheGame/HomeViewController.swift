@@ -9,7 +9,7 @@
 import UIKit
 import InTheGameSDK
 
-let exampleVideoURL = URL(string: "https://api-dev.inthegame.io/uploads/videos/streamers/a64706dd0f42356e93d299075940c456.857ecbb7a131f9bb4940a6b8ad5ec70e.mp4")!
+let exampleVideoURL = URL(string: "https://media2.inthegame.io/uploads/videos/streamers/a64706dd0f42356e93d299075940c456.857ecbb7a131f9bb4940a6b8ad5ec70e.mp4")!
 let broadcaster = "orlandofcchannel"
 
 class HomeViewController: UIViewController {

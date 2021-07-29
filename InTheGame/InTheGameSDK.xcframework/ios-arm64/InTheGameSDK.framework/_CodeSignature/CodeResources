@@ -18,7 +18,7 @@
 		</data>
 		<key>ITG.storyboardc/G8R-zd-o67-view-6Ir-Uw-TRk.nib</key>
 		<data>
-		Ip+XVeOvsWzs9gPDtvFZisjD/fQ=
+		whImsFz1oOfQbI5G21C0HJAeKmI=
 		</data>
 		<key>ITG.storyboardc/Info.plist</key>
 		<data>
@@ -26,23 +26,23 @@
 		</data>
 		<key>ITG.storyboardc/InteractiveVideo.nib</key>
 		<data>
-		VjKAgd3jhMY2hgl+Sc8OZ0YU8j0=
+		xE0KoOFnJlPk6UGxuwNhYa3kl1I=
 		</data>
 		<key>ITGPlayerView.nib</key>
 		<data>
-		cEoGN5Vfs3pqnuLSnmDC6iBw088=
+		ldhg61vfG2y376S2YQBtg34967o=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Yo8OB5JbrBBfWnXk14Yu+B5zfCE=
+		uOz3ttlrwApT5mY+p2mT8R6PfPg=
 		</data>
 		<key>Modules/InTheGameSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		GbIZN5IuaWZ8fjEfdwKznhUjExc=
+		2EmJl36AEewfaMi0zptCXk6QX2s=
 		</data>
 		<key>Modules/InTheGameSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		GbIZN5IuaWZ8fjEfdwKznhUjExc=
+		2EmJl36AEewfaMi0zptCXk6QX2s=
 		</data>
 		<key>Modules/InTheGameSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/InTheGameSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		3DWh9UfwNudAURAqeUj4NvMipRE=
+		+xObJjq9viVXiTbhWQlRm8grlBY=
 		</data>
 		<key>Modules/InTheGameSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Modules/InTheGameSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		3DWh9UfwNudAURAqeUj4NvMipRE=
+		+xObJjq9viVXiTbhWQlRm8grlBY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -100,7 +100,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VXgRSeP1MQbgr6CK+FUNHaoVXefQDo0jkKXzsmvcqrE=
+			rpYh+Wxg1y7sFRX+M8UGrxuebp7Dz/boLNCs3r5t6hA=
 			</data>
 		</dict>
 		<key>ITG.storyboardc/Info.plist</key>
@@ -114,28 +114,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hLe4sFe2xCyziD7/LqwLNKdISclPJ+OOFZ8yw/o3N50=
+			yROmbEgDISGj2IlkCEsLHpmwpKewJCcfLqY+sDyf9J8=
 			</data>
 		</dict>
 		<key>ITGPlayerView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iOn/LdljLiiicx7Q+rErn7Ju2pFYlHBwiOnJ+37OdsI=
+			twvErATgbs4VCABE61m4Vqs2D45PEZPsvWr2sKenMzQ=
 			</data>
 		</dict>
 		<key>Modules/InTheGameSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CPgA0Xj2tOMokRQOqPRXOG+3q1yF3Zyo03b2w34pX2k=
+			FZqUpywfpPJYYuInEl40gPX52zER60vnEWGGF5wnZug=
 			</data>
 		</dict>
 		<key>Modules/InTheGameSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CPgA0Xj2tOMokRQOqPRXOG+3q1yF3Zyo03b2w34pX2k=
+			FZqUpywfpPJYYuInEl40gPX52zER60vnEWGGF5wnZug=
 			</data>
 		</dict>
 		<key>Modules/InTheGameSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -156,7 +156,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CwHZsHmDn2TprM6NHbEXmaFf0s3YVbqt1bgfDYOrlAk=
+			bhGV6XUYFCKB+kCQLZvY7lNV5IkckXW39fj1itd2hx0=
 			</data>
 		</dict>
 		<key>Modules/InTheGameSDK.swiftmodule/arm64.swiftdoc</key>
@@ -177,7 +177,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CwHZsHmDn2TprM6NHbEXmaFf0s3YVbqt1bgfDYOrlAk=
+			bhGV6XUYFCKB+kCQLZvY7lNV5IkckXW39fj1itd2hx0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
