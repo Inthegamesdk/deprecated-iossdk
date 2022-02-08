@@ -26,8 +26,30 @@ You can create it as:
 ```
 let overlay = ITGOverlayView(channelID: <your_channel_id>, broadcasterName: <your_account>, environment: .devDefault, delegate: self)
 ```
+
 You'll need to implement the following delegate methods:
 ```
 func didTapVideoArea() 
 func getVideoTime() -> Double 
 ```
+
+That is enough to activate the basics. For additional configuration, there are some variables you can set:
+```
+let overlay = ITGOverlayView(channelID: <your_channel_id>,
+                                  broadcasterName: <your_account>,
+                                  environment: .devDefault,
+                                  delegate: self,
+                                  language: "en",
+                                  showMenu: true,
+                                  userBroadcasterForeignID: <user_id>,
+                                  userInitialName: <user_name>,
+                                  delay: 3)
+```
+
+Interface `language` can be configured on the load method.
+
+`showMenu` can be used to show the ITG menu with the latest features.
+
+`userBroadcasterForeignID` and `userInitialName` can be used to connect ITG content with your user's account.
+
+`delay` will add an extra delay before showing each interaction (in seconds).
