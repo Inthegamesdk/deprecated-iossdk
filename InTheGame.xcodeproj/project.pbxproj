@@ -7,16 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D49A44C27B2B7F100C108B9 /* Inthegamemobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D49A44A27B2B7E900C108B9 /* Inthegamemobile.xcframework */; };
+		6D49A44D27B2B7F100C108B9 /* Inthegamemobile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D49A44A27B2B7E900C108B9 /* Inthegamemobile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6D49A45027B2B8E500C108B9 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D49A44E27B2B8E400C108B9 /* ExampleViewController.swift */; };
+		6D49A45127B2B8E500C108B9 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D49A44F27B2B8E500C108B9 /* IntroViewController.swift */; };
 		6DACAF5D239FF81B00443D25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DACAF5C239FF81B00443D25 /* AppDelegate.swift */; };
 		6DACAF64239FF81B00443D25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DACAF62239FF81B00443D25 /* Main.storyboard */; };
 		6DACAF66239FF81D00443D25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DACAF65239FF81D00443D25 /* Assets.xcassets */; };
 		6DACAF69239FF81D00443D25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DACAF67239FF81D00443D25 /* LaunchScreen.storyboard */; };
-		6DACAF72239FF86800443D25 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DACAF70239FF86800443D25 /* ExampleViewController.swift */; };
-		6DACAF73239FF86800443D25 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DACAF71239FF86800443D25 /* HomeViewController.swift */; };
-		6DCE1ABE260CFDBC0000ECE0 /* OverlayExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCE1ABD260CFDBC0000ECE0 /* OverlayExampleViewController.swift */; };
 		6DCE1AC0260CFFB90000ECE0 /* AVPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCE1ABF260CFFB90000ECE0 /* AVPlayerView.swift */; };
-		6DE93FEC26053508005AB3A9 /* InTheGameSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DE93FEA26053502005AB3A9 /* InTheGameSDK.xcframework */; };
-		6DE93FED26053508005AB3A9 /* InTheGameSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DE93FEA26053502005AB3A9 /* InTheGameSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,7 +25,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				6DE93FED26053508005AB3A9 /* InTheGameSDK.xcframework in Embed Frameworks */,
+				6D49A44D27B2B7F100C108B9 /* Inthegamemobile.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -34,17 +33,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6D49A44A27B2B7E900C108B9 /* Inthegamemobile.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Inthegamemobile.xcframework; sourceTree = "<group>"; };
+		6D49A44E27B2B8E400C108B9 /* ExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
+		6D49A44F27B2B8E500C108B9 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		6DACAF59239FF81B00443D25 /* InTheGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InTheGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DACAF5C239FF81B00443D25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DACAF63239FF81B00443D25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6DACAF65239FF81D00443D25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6DACAF68239FF81D00443D25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DACAF6A239FF81D00443D25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6DACAF70239FF86800443D25 /* ExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
-		6DACAF71239FF86800443D25 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		6DCE1ABD260CFDBC0000ECE0 /* OverlayExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayExampleViewController.swift; sourceTree = "<group>"; };
 		6DCE1ABF260CFFB90000ECE0 /* AVPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerView.swift; sourceTree = "<group>"; };
-		6DE93FEA26053502005AB3A9 /* InTheGameSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = InTheGameSDK.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DE93FEC26053508005AB3A9 /* InTheGameSDK.xcframework in Frameworks */,
+				6D49A44C27B2B7F100C108B9 /* Inthegamemobile.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,15 +77,14 @@
 			isa = PBXGroup;
 			children = (
 				6DACAF5C239FF81B00443D25 /* AppDelegate.swift */,
-				6DACAF70239FF86800443D25 /* ExampleViewController.swift */,
-				6DACAF71239FF86800443D25 /* HomeViewController.swift */,
-				6DCE1ABD260CFDBC0000ECE0 /* OverlayExampleViewController.swift */,
+				6D49A44E27B2B8E400C108B9 /* ExampleViewController.swift */,
+				6D49A44F27B2B8E500C108B9 /* IntroViewController.swift */,
 				6DCE1ABF260CFFB90000ECE0 /* AVPlayerView.swift */,
 				6DACAF62239FF81B00443D25 /* Main.storyboard */,
 				6DACAF65239FF81D00443D25 /* Assets.xcassets */,
 				6DACAF67239FF81D00443D25 /* LaunchScreen.storyboard */,
 				6DACAF6A239FF81D00443D25 /* Info.plist */,
-				6DE93FEA26053502005AB3A9 /* InTheGameSDK.xcframework */,
+				6D49A44A27B2B7E900C108B9 /* Inthegamemobile.xcframework */,
 			);
 			path = InTheGame;
 			sourceTree = "<group>";
@@ -164,11 +161,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DACAF73239FF86800443D25 /* HomeViewController.swift in Sources */,
-				6DACAF72239FF86800443D25 /* ExampleViewController.swift in Sources */,
-				6DCE1ABE260CFDBC0000ECE0 /* OverlayExampleViewController.swift in Sources */,
 				6DACAF5D239FF81B00443D25 /* AppDelegate.swift in Sources */,
+				6D49A45127B2B8E500C108B9 /* IntroViewController.swift in Sources */,
 				6DCE1AC0260CFFB90000ECE0 /* AVPlayerView.swift in Sources */,
+				6D49A45027B2B8E500C108B9 /* ExampleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

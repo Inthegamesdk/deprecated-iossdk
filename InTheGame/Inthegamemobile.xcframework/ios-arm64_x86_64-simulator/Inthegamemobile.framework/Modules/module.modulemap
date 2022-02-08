@@ -1,0 +1,11 @@
+framework module Inthegamemobile {
+  umbrella header "Inthegamemobile.h"
+
+  export *
+  module * { export * }
+}
+
+module Inthegamemobile.Swift {
+    header "Inthegamemobile-Swift.h"
+    requires objc
+}
