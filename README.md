@@ -33,7 +33,9 @@ func didTapVideoArea()
 func getVideoTime() -> Double 
 ```
 
-That is enough to activate the basics. For additional configuration, there are some variables you can set:
+## Other options
+
+For additional configuration, there are some variables you can set:
 ```
 let overlay = ITGOverlayView(channelID: <your_channel_id>,
                                   broadcasterName: <your_account>,
