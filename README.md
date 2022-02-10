@@ -30,7 +30,11 @@ let overlay = ITGOverlayView(channelID: <your_channel_id>, broadcasterName: <you
 You'll need to implement the following delegate methods:
 ```
 func getVideoTime() -> Double 
+func overlayWillOpenActivity(height: CGFloat)
+func overlayWillCloseActivity()
 ```
+On the first method you'll need to provide the current video time (so that the overlay knows when to show content).
+The other two methods will inform your app when an interaction is shown or closed (so you can adjust your interface if needed).
 
 ## Other options
 
