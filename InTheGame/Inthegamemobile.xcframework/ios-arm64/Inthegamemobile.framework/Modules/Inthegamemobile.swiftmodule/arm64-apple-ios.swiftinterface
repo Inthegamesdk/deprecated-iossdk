@@ -21,13 +21,14 @@ public struct ITGEnvironment {
   public static let productionDefault: Inthegamemobile.ITGEnvironment
 }
 public protocol ITGOverlayDelegate : ObjectiveC.NSObject {
-  func didTapVideoArea()
   func getVideoTime() -> Swift.Double
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class ITGOverlayView : UIKit.UIView, WebKit.WKUIDelegate, WebKit.WKNavigationDelegate, UIKit.UIGestureRecognizerDelegate {
   @_Concurrency.MainActor(unsafe) weak public var delegate: Inthegamemobile.ITGOverlayDelegate?
   @_Concurrency.MainActor(unsafe) public init(channelID: Swift.String, broadcasterName: Swift.String, environment: Inthegamemobile.ITGEnvironment, delegate: Inthegamemobile.ITGOverlayDelegate?, language: Swift.String = "en", showMenu: Swift.Bool = false, userBroadcasterForeignID: Swift.String? = nil, userInitialName: Swift.String? = nil, delay: Swift.Int? = nil, customURL: Swift.String? = nil)
   @_Concurrency.MainActor(unsafe) public func updateOverlayTime()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func point(inside point: CoreGraphics.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) public func hasContentAtPoint(_ point: CoreGraphics.CGPoint) -> Swift.Bool
   @_Concurrency.MainActor(unsafe) @objc public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func didMoveToWindow()
   @_Concurrency.MainActor(unsafe) public func disable()

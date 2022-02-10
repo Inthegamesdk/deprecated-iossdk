@@ -213,8 +213,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 @class NSCoder;
-@class UIGestureRecognizer;
+@class UIEvent;
 @class NSNumber;
+@class UIGestureRecognizer;
 @class WKWebView;
 @class WKNavigationResponse;
 @class WKNavigation;
@@ -226,6 +227,7 @@ SWIFT_CLASS("_TtC15Inthegamemobile14ITGOverlayView")
 @interface ITGOverlayView : UIView <UIGestureRecognizerDelegate, WKNavigationDelegate, WKUIDelegate>
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)gestureRecognizer:(UIGestureRecognizer * _Nonnull)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer * _Nonnull)otherGestureRecognizer SWIFT_WARN_UNUSED_RESULT;
 - (void)didMoveToWindow;
 - (void)webView:(WKWebView * _Nonnull)webView decidePolicyForNavigationResponse:(WKNavigationResponse * _Nonnull)navigationResponse decisionHandler:(void (^ _Nonnull)(WKNavigationResponsePolicy))decisionHandler;
@@ -462,8 +464,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 @class NSCoder;
-@class UIGestureRecognizer;
+@class UIEvent;
 @class NSNumber;
+@class UIGestureRecognizer;
 @class WKWebView;
 @class WKNavigationResponse;
 @class WKNavigation;
@@ -475,6 +478,7 @@ SWIFT_CLASS("_TtC15Inthegamemobile14ITGOverlayView")
 @interface ITGOverlayView : UIView <UIGestureRecognizerDelegate, WKNavigationDelegate, WKUIDelegate>
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)gestureRecognizer:(UIGestureRecognizer * _Nonnull)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer * _Nonnull)otherGestureRecognizer SWIFT_WARN_UNUSED_RESULT;
 - (void)didMoveToWindow;
 - (void)webView:(WKWebView * _Nonnull)webView decidePolicyForNavigationResponse:(WKNavigationResponse * _Nonnull)navigationResponse decisionHandler:(void (^ _Nonnull)(WKNavigationResponsePolicy))decisionHandler;

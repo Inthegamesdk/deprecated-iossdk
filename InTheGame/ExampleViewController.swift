@@ -80,11 +80,6 @@ class ExampleViewController: UIViewController {
 
 extension ExampleViewController: ITGOverlayDelegate {
     
-    func didTapVideoArea() {
-        //called when user taps on the empty area of the overlay
-        //useful for showing video controls
-    }
-    
     func getVideoTime() -> Double {
         return playerLayer?.player?.currentTime().seconds ?? 0
     }
