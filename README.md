@@ -29,7 +29,6 @@ let overlay = ITGOverlayView(channelID: <your_channel_id>, broadcasterName: <you
 
 You'll need to implement the following delegate methods:
 ```
-func didTapVideoArea() 
 func getVideoTime() -> Double 
 ```
 
