@@ -23,7 +23,8 @@ class ExampleViewController: UIViewController {
     var overlay: ITGOverlayView!
     var playerLayer: AVPlayerLayer?
     var playerView: AVPlayerView?
-    
+    var playerBottomConstraint: NSLayoutConstraint?
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -40,17 +41,23 @@ class ExampleViewController: UIViewController {
         let item = AVPlayerItem(asset: asset)
         let player = AVPlayer(playerItem: item)
         let view = AVPlayerView(frame: playerContainer.bounds)
-        view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        view.translatesAutoresizingMaskIntoConstraints = true
+        view.translatesAutoresizingMaskIntoConstraints = false
         view.player = player
         view.playerLayer.frame = view.bounds
 
         playerView = view
         
-        view.playerLayer.videoGravity = .resizeAspect
+        view.playerLayer.videoGravity = .resize
         view.playerLayer.needsDisplayOnBoundsChange = true
         playerLayer = view.playerLayer
         playerContainer.addSubview(view)
+        
+        view.topAnchor.constraint(equalTo: playerContainer.topAnchor).isActive = true
+        view.leadingAnchor.constraint(equalTo: playerContainer.leadingAnchor).isActive = true
+        view.trailingAnchor.constraint(equalTo: playerContainer.trailingAnchor).isActive = true
+        
+        playerBottomConstraint = view.bottomAnchor.constraint(equalTo: playerContainer.bottomAnchor, constant: 0)
+        playerBottomConstraint?.isActive = true
 
         player.play()
     }
@@ -58,11 +65,12 @@ class ExampleViewController: UIViewController {
     func loadOverlay() {
         //load the ITG overlay over your video player
         let view = ITGOverlayView(channelID: channelID, broadcasterName: broadcaster, environment: .devDefault, delegate: self)
+        
         view.frame = playerContainer.bounds
         view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         view.translatesAutoresizingMaskIntoConstraints = true
         playerContainer.addSubview(view)
-        
+
         overlay = view
     }
     
@@ -79,7 +87,23 @@ class ExampleViewController: UIViewController {
 }
 
 extension ExampleViewController: ITGOverlayDelegate {
+    //called when the overlay shows a new activity
+    func overlayWillOpenActivity(height: CGFloat) {
+        playerBottomConstraint?.constant = -height
+        UIView.animate(withDuration: 0.4) {
+            self.playerContainer.layoutIfNeeded()
+        }
+    }
     
+    //called when the overlay closes the current activity
+    func overlayWillCloseActivity() {
+        playerBottomConstraint?.constant = 0
+        UIView.animate(withDuration: 0.4) {
+            self.playerContainer.layoutIfNeeded()
+        }
+    }
+    
+    //the overlay will periodically call this method to get the updated video time
     func getVideoTime() -> Double {
         return playerLayer?.player?.currentTime().seconds ?? 0
     }
