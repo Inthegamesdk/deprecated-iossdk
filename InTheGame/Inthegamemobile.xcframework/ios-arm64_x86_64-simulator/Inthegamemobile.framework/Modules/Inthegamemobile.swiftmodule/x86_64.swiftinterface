@@ -23,6 +23,8 @@ public struct ITGEnvironment {
 public protocol ITGOverlayDelegate : ObjectiveC.NSObject {
   func overlayWillOpenActivity(height: CoreGraphics.CGFloat)
   func overlayWillCloseActivity()
+  func overlayPause()
+  func overlayResume()
   func getVideoTime() -> Swift.Double
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class ITGOverlayView : UIKit.UIView, WebKit.WKUIDelegate, WebKit.WKNavigationDelegate, UIKit.UIGestureRecognizerDelegate {

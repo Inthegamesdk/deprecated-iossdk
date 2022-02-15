@@ -30,19 +30,31 @@
                                     <color key="titleColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Zn2-ri-nk7" kind="presentation" id="fyb-Z7-GeJ"/>
+                                    <segue destination="Zn2-ri-nk7" kind="presentation" modalPresentationStyle="fullScreen" id="fyb-Z7-GeJ"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Ob9-Ul-8I7" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1.1" id="166-YU-04N"/>
                             <constraint firstItem="DBD-iY-9A1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="70" id="7ig-ro-Cqv"/>
                             <constraint firstItem="DBD-iY-9A1" firstAttribute="top" secondItem="Ob9-Ul-8I7" secondAttribute="bottom" constant="24" id="9rb-eM-GbZ"/>
                             <constraint firstItem="DBD-iY-9A1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DSx-5z-V2I"/>
                             <constraint firstItem="Ob9-Ul-8I7" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.33" id="IPl-hM-tAZ"/>
                             <constraint firstItem="Ob9-Ul-8I7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="acD-tx-IHo"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="166-YU-04N"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="166-YU-04N"/>
+                                <exclude reference="IPl-hM-tAZ"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="Dc8-ix-2bN"/>
                     <connections>
@@ -85,6 +97,47 @@
                                     <constraint firstAttribute="width" secondItem="xkk-jp-Egx" secondAttribute="height" multiplier="16:9" priority="700" id="76M-kv-izF"/>
                                 </constraints>
                             </view>
+                            <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="faF-eE-Mcj">
+                                <rect key="frame" x="60" y="365" width="776" height="28"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUu-yD-ohm">
+                                        <rect key="frame" x="4" y="0.0" width="30" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="Zhb-qe-6Cm"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="contentEdgeInsets" minX="4" minY="3" maxX="4" maxY="3"/>
+                                        <state key="normal" image="play">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <state key="selected" image="pause"/>
+                                        <connections>
+                                            <action selector="actionPlay:" destination="Zn2-ri-nk7" eventType="touchUpInside" id="h2P-Nj-6R4"/>
+                                        </connections>
+                                    </button>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="RCc-a3-SiY">
+                                        <rect key="frame" x="40" y="0.0" width="730" height="28"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="minimumTrackTintColor" white="0.85185680649999995" alpha="0.70159995720000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="maximumTrackTintColor" white="0.85185680649999995" alpha="0.70159995720000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="actionSlider:" destination="Zn2-ri-nk7" eventType="valueChanged" id="QZe-oy-RMI"/>
+                                        </connections>
+                                    </slider>
+                                </subviews>
+                                <color key="backgroundColor" white="0.1221907106" alpha="0.44892444349999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ZUu-yD-ohm" firstAttribute="top" secondItem="faF-eE-Mcj" secondAttribute="top" id="5su-LR-meW"/>
+                                    <constraint firstItem="RCc-a3-SiY" firstAttribute="leading" secondItem="ZUu-yD-ohm" secondAttribute="trailing" constant="8" id="7hh-ss-nVd"/>
+                                    <constraint firstAttribute="bottom" secondItem="RCc-a3-SiY" secondAttribute="bottom" constant="1" id="Ty2-6d-Uo4"/>
+                                    <constraint firstAttribute="height" constant="28" id="YsB-HL-Gek"/>
+                                    <constraint firstItem="ZUu-yD-ohm" firstAttribute="leading" secondItem="faF-eE-Mcj" secondAttribute="leading" constant="4" id="abp-JR-cnf"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZUu-yD-ohm" secondAttribute="bottom" id="pbs-sZ-7bY"/>
+                                    <constraint firstItem="RCc-a3-SiY" firstAttribute="top" secondItem="faF-eE-Mcj" secondAttribute="top" id="tPo-w1-bti"/>
+                                    <constraint firstAttribute="trailing" secondItem="RCc-a3-SiY" secondAttribute="trailing" priority="1" constant="8" id="ziH-Ir-f0P"/>
+                                </constraints>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iBc-Vn-acD">
                                 <rect key="frame" x="842" y="10" width="44" height="44"/>
                                 <constraints>
@@ -106,15 +159,22 @@
                             <constraint firstItem="xkk-jp-Egx" firstAttribute="leading" relation="lessThanOrEqual" secondItem="wyS-7t-sp4" secondAttribute="leading" id="5Tb-F8-dP9"/>
                             <constraint firstItem="iBc-Vn-acD" firstAttribute="width" secondItem="iBc-Vn-acD" secondAttribute="height" multiplier="1:1" id="BFD-7k-wR6"/>
                             <constraint firstAttribute="trailing" secondItem="iBc-Vn-acD" secondAttribute="trailing" constant="10" id="Fus-z5-cBA"/>
+                            <constraint firstItem="wyS-7t-sp4" firstAttribute="bottom" secondItem="faF-eE-Mcj" secondAttribute="bottom" id="OS7-Wx-v9u"/>
                             <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="xkk-jp-Egx" secondAttribute="bottom" constant="-1" id="Zsu-PI-a31"/>
                             <constraint firstItem="xkk-jp-Egx" firstAttribute="centerX" secondItem="8Ut-sQ-VAg" secondAttribute="centerX" id="b5Q-W7-8D2"/>
+                            <constraint firstItem="xkk-jp-Egx" firstAttribute="width" secondItem="8Ut-sQ-VAg" secondAttribute="width" priority="400" id="coB-C3-l6u"/>
+                            <constraint firstItem="faF-eE-Mcj" firstAttribute="trailing" secondItem="xkk-jp-Egx" secondAttribute="trailing" constant="-16" id="f3U-lt-F4j"/>
                             <constraint firstItem="xkk-jp-Egx" firstAttribute="top" relation="greaterThanOrEqual" secondItem="8Ut-sQ-VAg" secondAttribute="top" constant="-1" id="frj-w9-jA7"/>
+                            <constraint firstItem="faF-eE-Mcj" firstAttribute="leading" secondItem="xkk-jp-Egx" secondAttribute="leading" constant="16" id="tBv-Sg-Z3u"/>
                             <constraint firstItem="iBc-Vn-acD" firstAttribute="top" secondItem="wyS-7t-sp4" secondAttribute="top" constant="10" id="zpb-BH-B5e"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Overlay example" id="fhE-1P-Qen"/>
                     <connections>
+                        <outlet property="controlView" destination="faF-eE-Mcj" id="B1j-az-GOs"/>
+                        <outlet property="playButton" destination="ZUu-yD-ohm" id="gKV-qX-LiY"/>
                         <outlet property="playerContainer" destination="xkk-jp-Egx" id="hRf-h3-XnH"/>
+                        <outlet property="slider" destination="RCc-a3-SiY" id="eqc-YR-czM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ws1-oI-dCB" sceneMemberID="firstResponder"/>
@@ -125,5 +185,7 @@
     <resources>
         <image name="close" width="256" height="256"/>
         <image name="itgLogo" width="1000" height="200"/>
+        <image name="pause" width="128" height="128"/>
+        <image name="play" width="128" height="128"/>
     </resources>
 </document>
