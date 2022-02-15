@@ -32,12 +32,11 @@ public protocol ITGOverlayDelegate : ObjectiveC.NSObject {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func point(inside point: CoreGraphics.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
   @_Concurrency.MainActor(unsafe) public func hasContentAtPoint(_ point: CoreGraphics.CGPoint) -> Swift.Bool
   @_Concurrency.MainActor(unsafe) @objc public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func didMoveToWindow()
-  @_Concurrency.MainActor(unsafe) public func disable()
+  @_Concurrency.MainActor(unsafe) public func shutdown()
+  @objc deinit
   @_Concurrency.MainActor(unsafe) @objc public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationResponse: WebKit.WKNavigationResponse, decisionHandler: @escaping (WebKit.WKNavigationResponsePolicy) -> Swift.Void)
   @_Concurrency.MainActor(unsafe) @objc public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
   @_Concurrency.MainActor(unsafe) @objc public func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
-  @objc deinit
 }
 extension Inthegamemobile.ITGOverlayView : WebKit.WKScriptMessageHandler {
   @_Concurrency.MainActor(unsafe) @objc dynamic public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
@@ -45,4 +44,9 @@ extension Inthegamemobile.ITGOverlayView : WebKit.WKScriptMessageHandler {
 public struct ITGDemoChannel : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
+}
+@objc @_inheritsConvenienceInitializers public class ITGTools : ObjectiveC.NSObject {
+  public class func getVideoURL(channelID: Swift.String, broadcaster: Swift.String, completion: @escaping (Swift.String?, Swift.Error?) -> ())
+  @objc override dynamic public init()
+  @objc deinit
 }
