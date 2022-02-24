@@ -47,7 +47,7 @@ class ExampleViewController: UIViewController {
     
     func loadOverlay() {
         //load the ITG overlay over your video player
-        let view = ITGOverlayView(channelID: channelID, broadcasterName: broadcaster, environment: .devDefault, delegate: self, showMenu: true)
+        let view = ITGOverlayView(channelID: channelID, broadcasterName: broadcaster, environment: .devDefault, delegate: self)
         
         view.frame = playerContainer.bounds
         view.translatesAutoresizingMaskIntoConstraints = false
