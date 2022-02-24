@@ -27,6 +27,8 @@ class ExampleViewController: UIViewController {
     var playerLayer: AVPlayerLayer?
     var playerView: AVPlayerView?
     var playerBottomConstraint: NSLayoutConstraint?
+    var overlayPortraitConstraint: NSLayoutConstraint?
+    var overlayLandscapeConstraint: NSLayoutConstraint?
     var seeking = false
     var sliderTimer: Timer?
 
@@ -48,9 +50,9 @@ class ExampleViewController: UIViewController {
         let view = ITGOverlayView(channelID: channelID, broadcasterName: broadcaster, environment: .devDefault, delegate: self, showMenu: true)
         
         view.frame = playerContainer.bounds
-        view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        view.translatesAutoresizingMaskIntoConstraints = true
-        playerContainer.addSubview(view)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        self.view.insertSubview(view, aboveSubview: playerContainer)
+        addOverlayConstraints(view)
 
         overlay = view
     }
@@ -70,9 +72,11 @@ class ExampleViewController: UIViewController {
 extension ExampleViewController: ITGOverlayDelegate {
     //called when the overlay shows a new activity
     func overlayWillOpenActivity(height: CGFloat) {
-        playerBottomConstraint?.constant = -height
-        UIView.animate(withDuration: 0.4) {
-            self.playerContainer.layoutIfNeeded()
+        if currentInterfaceOrientation.isLandscape {
+            playerBottomConstraint?.constant = -height
+            UIView.animate(withDuration: 0.4) {
+                self.playerContainer.layoutIfNeeded()
+            }
         }
     }
     
@@ -98,7 +102,7 @@ extension ExampleViewController: ITGOverlayDelegate {
     }
 }
 
-//MARK: - Video and controls
+//MARK: - Video, controls and layout
 extension ExampleViewController {
     
     func loadVideoPlayer() {
@@ -200,4 +204,35 @@ extension ExampleViewController {
     }
     
     override var prefersHomeIndicatorAutoHidden: Bool { return true }
+    
+    func addOverlayConstraints(_ overlay: UIView) {
+        overlay.leadingAnchor.constraint(equalTo: playerContainer.leadingAnchor).isActive = true
+        overlay.trailingAnchor.constraint(equalTo: playerContainer.trailingAnchor).isActive = true
+        overlay.centerYAnchor.constraint(equalTo: playerContainer.centerYAnchor).isActive = true
+        overlayLandscapeConstraint = overlay.bottomAnchor.constraint(equalTo: playerContainer.bottomAnchor)
+        overlayPortraitConstraint = overlay.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
+        if currentInterfaceOrientation.isPortrait {
+            overlayPortraitConstraint?.isActive = true
+        } else {
+            overlayLandscapeConstraint?.isActive = true
+        }
+    }
+    
+    private var currentInterfaceOrientation: UIInterfaceOrientation {
+        if #available(iOS 13.0, *) {
+            return (UIApplication.shared.connectedScenes.first as? UIWindowScene)?.interfaceOrientation ?? .landscapeLeft
+        } else {
+            return UIApplication.shared.statusBarOrientation
+        }
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        coordinator.animate(alongsideTransition: { (context) in
+            let isPortrait = self.currentInterfaceOrientation.isPortrait
+            self.overlayPortraitConstraint?.isActive = isPortrait
+            self.overlayLandscapeConstraint?.isActive = !isPortrait
+            self.overlay?.setNeedsLayout()
+        })
+    }
 }
