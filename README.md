@@ -24,7 +24,7 @@ You can run the included project for a pratical implementation example.
 To integrate it, you create a view for the ITG interactive Overlay and position it over your video player as you see fit.
 You can create it as:
 ```
-let overlay = ITGOverlayView(channelID: <your_channel_id>, broadcasterName: <your_account>, environment: .devDefault, delegate: self)
+let overlay = ITGOverlayView(channelSlug: channelSlug, accountName: accountName, accountId: accountId, environment: .stage, delegate: self, language: language)
 ```
 
 You'll need to implement the following delegate methods:
@@ -40,21 +40,19 @@ The other two methods will inform your app when an interaction is shown or close
 
 For additional configuration, there are some variables you can set:
 ```
-let overlay = ITGOverlayView(channelID: <your_channel_id>,
-                                  broadcasterName: <your_account>,
-                                  environment: .devDefault,
+let overlay = ITGOverlayView(channelSlug: <your_channel_slug>,
+                                  accountName: <your_account_name>,
+                                  accountId: <your_account_id>,
+                                  environment: .stage,
                                   delegate: self,
                                   language: "en",
-                                  showMenu: true,
-                                  userBroadcasterForeignID: <user_id>,
-                                  userInitialName: <user_name>,
-                                  delay: 3)
+                                  foreignId: <user_id>,
+                                  userName: <user_name>,
+                                  customUrl: <custom_overlay_url>)
 ```
 
 Interface `language` can be configured on the load method.
 
-`showMenu` can be used to show the ITG menu with the latest features.
+`foreignId` and `userName` can be used to connect ITG content with your user's account.
 
-`userBroadcasterForeignID` and `userInitialName` can be used to connect ITG content with your user's account.
-
-`delay` will add an extra delay before showing each interaction (in seconds).
+`customUrl` can be used to set custom url for overlay.

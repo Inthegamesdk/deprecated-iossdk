@@ -11,24 +11,24 @@ import AVFoundation
 import AVKit
 import Inthegamemobile
 
-let broadcaster = "demos"
-let channelID = "soccer_predictions"
+let channelSlug = "channel_one_stage"
+let accountName = "cellcom"
+let accountId = "631da52247f9e460d1039022"
 let language = "en"
-let videoURL = "https://media2.inthegame.io/uploads/videos/streamers/278dee276f8d43d11dad3030d0aa449e.a4ef1c02ad73f7b5ed0a6df3809abf12.mp4"
-
+let videoURL = "https://media2.inthegame.io/uploads/automation_demo.mp4"
 
 class ExampleViewController: UIViewController {
+    
     @IBOutlet weak var playerContainer: UIView!
     @IBOutlet weak var controlView: UIView!
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var playButton: UIButton!
     
+    override var prefersHomeIndicatorAutoHidden: Bool { return true }
+    
     var overlay: ITGOverlayView!
     var playerLayer: AVPlayerLayer?
     var playerView: AVPlayerView?
-    var playerBottomConstraint: NSLayoutConstraint?
-    var overlayPortraitConstraint: NSLayoutConstraint?
-    var overlayLandscapeConstraint: NSLayoutConstraint?
     var seeking = false
     var sliderTimer: Timer?
 
@@ -47,7 +47,7 @@ class ExampleViewController: UIViewController {
     
     func loadOverlay() {
         //load the ITG overlay over your video player
-        let view = ITGOverlayView(channelID: channelID, broadcasterName: broadcaster, environment: .devDefault, delegate: self)
+        let view = ITGOverlayView(channelSlug: channelSlug, accountName: accountName, accountId: accountId, environment: .stage, delegate: self, language: language)
         
         view.frame = playerContainer.bounds
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -67,25 +67,19 @@ class ExampleViewController: UIViewController {
     @IBAction func actionClose(_ sender: Any) {
         dismiss(animated: true, completion:nil)
     }
+    
 }
 
 extension ExampleViewController: ITGOverlayDelegate {
+    
     //called when the overlay shows a new activity
     func overlayWillOpenActivity(height: CGFloat) {
-        if currentInterfaceOrientation.isLandscape {
-            playerBottomConstraint?.constant = -height
-            UIView.animate(withDuration: 0.4) {
-                self.playerContainer.layoutIfNeeded()
-            }
-        }
+    
     }
     
     //called when the overlay closes the current activity
     func overlayWillCloseActivity() {
-        playerBottomConstraint?.constant = 0
-        UIView.animate(withDuration: 0.4) {
-            self.playerContainer.layoutIfNeeded()
-        }
+    
     }
     
     //the overlay will periodically call this method to get the updated video time
@@ -100,6 +94,7 @@ extension ExampleViewController: ITGOverlayDelegate {
     func overlayResume() {
         playerLayer?.player?.play()
     }
+    
 }
 
 //MARK: - Video, controls and layout
@@ -121,11 +116,9 @@ extension ExampleViewController {
         playerContainer.addSubview(view)
         
         view.topAnchor.constraint(equalTo: playerContainer.topAnchor).isActive = true
+        view.bottomAnchor.constraint(equalTo: playerContainer.bottomAnchor).isActive = true
         view.leadingAnchor.constraint(equalTo: playerContainer.leadingAnchor).isActive = true
         view.trailingAnchor.constraint(equalTo: playerContainer.trailingAnchor).isActive = true
-        
-        playerBottomConstraint = view.bottomAnchor.constraint(equalTo: playerContainer.bottomAnchor, constant: 0)
-        playerBottomConstraint?.isActive = true
 
         player.play()
         
@@ -177,6 +170,7 @@ extension ExampleViewController {
         })
 
     }
+    
     @objc func playerDidFinishPlaying(note: NSNotification) {
         playButton.isSelected = false
         slider.value = 0
@@ -203,36 +197,11 @@ extension ExampleViewController {
         slider.setThumbImage(image, for: .highlighted)
     }
     
-    override var prefersHomeIndicatorAutoHidden: Bool { return true }
-    
     func addOverlayConstraints(_ overlay: UIView) {
-        overlay.leadingAnchor.constraint(equalTo: playerContainer.leadingAnchor).isActive = true
-        overlay.trailingAnchor.constraint(equalTo: playerContainer.trailingAnchor).isActive = true
-        overlay.centerYAnchor.constraint(equalTo: playerContainer.centerYAnchor).isActive = true
-        overlayLandscapeConstraint = overlay.bottomAnchor.constraint(equalTo: playerContainer.bottomAnchor)
-        overlayPortraitConstraint = overlay.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
-        if currentInterfaceOrientation.isPortrait {
-            overlayPortraitConstraint?.isActive = true
-        } else {
-            overlayLandscapeConstraint?.isActive = true
-        }
+        overlay.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        overlay.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        overlay.topAnchor.constraint(equalTo: playerContainer.bottomAnchor).isActive = true
+        overlay.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
     }
     
-    private var currentInterfaceOrientation: UIInterfaceOrientation {
-        if #available(iOS 13.0, *) {
-            return (UIApplication.shared.connectedScenes.first as? UIWindowScene)?.interfaceOrientation ?? .landscapeLeft
-        } else {
-            return UIApplication.shared.statusBarOrientation
-        }
-    }
-    
-    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        super.viewWillTransition(to: size, with: coordinator)
-        coordinator.animate(alongsideTransition: { (context) in
-            let isPortrait = self.currentInterfaceOrientation.isPortrait
-            self.overlayPortraitConstraint?.isActive = isPortrait
-            self.overlayLandscapeConstraint?.isActive = !isPortrait
-            self.overlay?.setNeedsLayout()
-        })
-    }
 }

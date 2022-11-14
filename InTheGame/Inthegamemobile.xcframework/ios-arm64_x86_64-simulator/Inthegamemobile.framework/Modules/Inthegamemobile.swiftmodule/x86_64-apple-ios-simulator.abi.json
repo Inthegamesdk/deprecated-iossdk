@@ -1,0 +1,2755 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Inthegamemobile",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreMedia",
+        "printedName": "CoreMedia",
+        "declKind": "Import",
+        "moduleName": "Inthegamemobile"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Inthegamemobile",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ITGEnvironment",
+        "printedName": "ITGEnvironment",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "apiBaseURL",
+            "printedName": "apiBaseURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15Inthegamemobile14ITGEnvironmentV10apiBaseURLSSvp",
+            "mangledName": "$s15Inthegamemobile14ITGEnvironmentV10apiBaseURLSSvp",
+            "moduleName": "Inthegamemobile",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15Inthegamemobile14ITGEnvironmentV10apiBaseURLSSvg",
+                "mangledName": "$s15Inthegamemobile14ITGEnvironmentV10apiBaseURLSSvg",
+                "moduleName": "Inthegamemobile",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "imageBaseURL",
+            "printedName": "imageBaseURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15Inthegamemobile14ITGEnvironmentV12imageBaseURLSSvp",
+            "mangledName": "$s15Inthegamemobile14ITGEnvironmentV12imageBaseURLSSvp",
+            "moduleName": "Inthegamemobile",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15Inthegamemobile14ITGEnvironmentV12imageBaseURLSSvg",
+                "mangledName": "$s15Inthegamemobile14ITGEnvironmentV12imageBaseURLSSvg",
+                "moduleName": "Inthegamemobile",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "envName",
+            "printedName": "envName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15Inthegamemobile14ITGEnvironmentV7envNameSSvp",
+            "mangledName": "$s15Inthegamemobile14ITGEnvironmentV7envNameSSvp",
+            "moduleName": "Inthegamemobile",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15Inthegamemobile14ITGEnvironmentV7envNameSSvg",
+                "mangledName": "$s15Inthegamemobile14ITGEnvironmentV7envNameSSvg",
+                "moduleName": "Inthegamemobile",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(apiBaseURL:imageBaseURL:envName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ITGEnvironment",
+                "printedName": "Inthegamemobile.ITGEnvironment",
+                "usr": "s:15Inthegamemobile14ITGEnvironmentV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15Inthegamemobile14ITGEnvironmentV10apiBaseURL05imagedE07envNameACSS_S2Stcfc",
+            "mangledName": "$s15Inthegamemobile14ITGEnvironmentV10apiBaseURL05imagedE07envNameACSS_S2Stcfc",
+            "moduleName": "Inthegamemobile",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "dev",
+            "printedName": "dev",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ITGEnvironment",
+                "printedName": "Inthegamemobile.ITGEnvironment",
+                "usr": "s:15Inthegamemobile14ITGEnvironmentV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15Inthegamemobile14ITGEnvironmentV3devACvpZ",
+            "mangledName": "$s15Inthegamemobile14ITGEnvironmentV3devACvpZ",
+            "moduleName": "Inthegamemobile",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ITGEnvironment",
+                    "printedName": "Inthegamemobile.ITGEnvironment",
+                    "usr": "s:15Inthegamemobile14ITGEnvironmentV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15Inthegamemobile14ITGEnvironmentV3devACvgZ",
+                "mangledName": "$s15Inthegamemobile14ITGEnvironmentV3devACvgZ",
+                "moduleName": "Inthegamemobile",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "test",
+            "printedName": "test",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ITGEnvironment",
+                "printedName": "Inthegamemobile.ITGEnvironment",
+                "usr": "s:15Inthegamemobile14ITGEnvironmentV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15Inthegamemobile14ITGEnvironmentV4testACvpZ",
+            "mangledName": "$s15Inthegamemobile14ITGEnvironmentV4testACvpZ",
+            "moduleName": "Inthegamemobile",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ITGEnvironment",
+                    "printedName": "Inthegamemobile.ITGEnvironment",
+                    "usr": "s:15Inthegamemobile14ITGEnvironmentV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15Inthegamemobile14ITGEnvironmentV4testACvgZ",
+                "mangledName": "$s15Inthegamemobile14ITGEnvironmentV4testACvgZ",
+                "moduleName": "Inthegamemobile",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "stage",
+            "printedName": "stage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ITGEnvironment",
+                "printedName": "Inthegamemobile.ITGEnvironment",
+                "usr": "s:15Inthegamemobile14ITGEnvironmentV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15Inthegamemobile14ITGEnvironmentV5stageACvpZ",
+            "mangledName": "$s15Inthegamemobile14ITGEnvironmentV5stageACvpZ",
+            "moduleName": "Inthegamemobile",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ITGEnvironment",
+                    "printedName": "Inthegamemobile.ITGEnvironment",
+                    "usr": "s:15Inthegamemobile14ITGEnvironmentV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15Inthegamemobile14ITGEnvironmentV5stageACvgZ",
+                "mangledName": "$s15Inthegamemobile14ITGEnvironmentV5stageACvgZ",
+                "moduleName": "Inthegamemobile",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "prod",
+            "printedName": "prod",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ITGEnvironment",
+                "printedName": "Inthegamemobile.ITGEnvironment",
+                "usr": "s:15Inthegamemobile14ITGEnvironmentV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15Inthegamemobile14ITGEnvironmentV4prodACvpZ",
+            "mangledName": "$s15Inthegamemobile14ITGEnvironmentV4prodACvpZ",
+            "moduleName": "Inthegamemobile",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ITGEnvironment",
+                    "printedName": "Inthegamemobile.ITGEnvironment",
+                    "usr": "s:15Inthegamemobile14ITGEnvironmentV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15Inthegamemobile14ITGEnvironmentV4prodACvgZ",
+                "mangledName": "$s15Inthegamemobile14ITGEnvironmentV4prodACvgZ",
+                "moduleName": "Inthegamemobile",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:15Inthegamemobile14ITGEnvironmentV",
+        "mangledName": "$s15Inthegamemobile14ITGEnvironmentV",
+        "moduleName": "Inthegamemobile",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Inthegamemobile",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Inthegamemobile"
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "Inthegamemobile"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Inthegamemobile",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "Inthegamemobile"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "Inthegamemobile"
+      },
+      {
+        "kind": "Import",
+        "name": "AVKit",
+        "printedName": "AVKit",
+        "declKind": "Import",
+        "moduleName": "Inthegamemobile"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ITGOverlayDelegate",
+        "printedName": "ITGOverlayDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "overlayWillOpenActivity",
+            "printedName": "overlayWillOpenActivity(height:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Inthegamemobile18ITGOverlayDelegateP23overlayWillOpenActivity6heighty14CoreFoundation7CGFloatV_tF",
+            "mangledName": "$s15Inthegamemobile18ITGOverlayDelegateP23overlayWillOpenActivity6heighty12CoreGraphics7CGFloatV_tF",
+            "moduleName": "Inthegamemobile",
+            "genericSig": "<τ_0_0 where τ_0_0 : Inthegamemobile.ITGOverlayDelegate>",
+            "sugared_genericSig": "<Self where Self : Inthegamemobile.ITGOverlayDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "overlayWillCloseActivity",
+            "printedName": "overlayWillCloseActivity()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Inthegamemobile18ITGOverlayDelegateP24overlayWillCloseActivityyyF",
+            "mangledName": "$s15Inthegamemobile18ITGOverlayDelegateP24overlayWillCloseActivityyyF",
+            "moduleName": "Inthegamemobile",
+            "genericSig": "<τ_0_0 where τ_0_0 : Inthegamemobile.ITGOverlayDelegate>",
+            "sugared_genericSig": "<Self where Self : Inthegamemobile.ITGOverlayDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "overlayPause",
+            "printedName": "overlayPause()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Inthegamemobile18ITGOverlayDelegateP12overlayPauseyyF",
+            "mangledName": "$s15Inthegamemobile18ITGOverlayDelegateP12overlayPauseyyF",
+            "moduleName": "Inthegamemobile",
+            "genericSig": "<τ_0_0 where τ_0_0 : Inthegamemobile.ITGOverlayDelegate>",
+            "sugared_genericSig": "<Self where Self : Inthegamemobile.ITGOverlayDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "overlayResume",
+            "printedName": "overlayResume()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Inthegamemobile18ITGOverlayDelegateP13overlayResumeyyF",
+            "mangledName": "$s15Inthegamemobile18ITGOverlayDelegateP13overlayResumeyyF",
+            "moduleName": "Inthegamemobile",
+            "genericSig": "<τ_0_0 where τ_0_0 : Inthegamemobile.ITGOverlayDelegate>",
+            "sugared_genericSig": "<Self where Self : Inthegamemobile.ITGOverlayDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getVideoTime",
+            "printedName": "getVideoTime()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Inthegamemobile18ITGOverlayDelegateP12getVideoTimeSdyF",
+            "mangledName": "$s15Inthegamemobile18ITGOverlayDelegateP12getVideoTimeSdyF",
+            "moduleName": "Inthegamemobile",
+            "genericSig": "<τ_0_0 where τ_0_0 : Inthegamemobile.ITGOverlayDelegate>",
+            "sugared_genericSig": "<Self where Self : Inthegamemobile.ITGOverlayDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:15Inthegamemobile18ITGOverlayDelegateP",
+        "mangledName": "$s15Inthegamemobile18ITGOverlayDelegateP",
+        "moduleName": "Inthegamemobile",
+        "genericSig": "<τ_0_0 : ObjectiveC.NSObject>",
+        "sugared_genericSig": "<Self : ObjectiveC.NSObject>",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ITGOverlayView",
+        "printedName": "ITGOverlayView",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "Inthegamemobile.ITGOverlayDelegate?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15Inthegamemobile14ITGOverlayViewC8delegateAA0B8Delegate_pSgvp",
+            "mangledName": "$s15Inthegamemobile14ITGOverlayViewC8delegateAA0B8Delegate_pSgvp",
+            "moduleName": "Inthegamemobile",
+            "declAttributes": [
+              "Custom",
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Inthegamemobile.ITGOverlayDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ITGOverlayDelegate",
+                        "printedName": "Inthegamemobile.ITGOverlayDelegate",
+                        "usr": "s:15Inthegamemobile18ITGOverlayDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15Inthegamemobile14ITGOverlayViewC8delegateAA0B8Delegate_pSgvg",
+                "mangledName": "$s15Inthegamemobile14ITGOverlayViewC8delegateAA0B8Delegate_pSgvg",
+                "moduleName": "Inthegamemobile",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Inthegamemobile.ITGOverlayDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ITGOverlayDelegate",
+                        "printedName": "Inthegamemobile.ITGOverlayDelegate",
+                        "usr": "s:15Inthegamemobile18ITGOverlayDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15Inthegamemobile14ITGOverlayViewC8delegateAA0B8Delegate_pSgvs",
+                "mangledName": "$s15Inthegamemobile14ITGOverlayViewC8delegateAA0B8Delegate_pSgvs",
+                "moduleName": "Inthegamemobile",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15Inthegamemobile14ITGOverlayViewC8delegateAA0B8Delegate_pSgvM",
+                "mangledName": "$s15Inthegamemobile14ITGOverlayViewC8delegateAA0B8Delegate_pSgvM",
+                "moduleName": "Inthegamemobile",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(channelSlug:accountName:accountId:environment:delegate:language:foreignId:userName:customUrl:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ITGOverlayView",
+                "printedName": "Inthegamemobile.ITGOverlayView",
+                "usr": "c:@M@Inthegamemobile@objc(cs)ITGOverlayView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ITGEnvironment",
+                "printedName": "Inthegamemobile.ITGEnvironment",
+                "usr": "s:15Inthegamemobile14ITGEnvironmentV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Inthegamemobile.ITGOverlayDelegate?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ITGOverlayDelegate",
+                    "printedName": "Inthegamemobile.ITGOverlayDelegate",
+                    "usr": "s:15Inthegamemobile18ITGOverlayDelegateP"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15Inthegamemobile14ITGOverlayViewC11channelSlug11accountName0F2Id11environment8delegate8language07foreignH004userG09customUrlACSS_S2SAA14ITGEnvironmentVAA0B8Delegate_pSgS2SSgA2Qtcfc",
+            "mangledName": "$s15Inthegamemobile14ITGOverlayViewC11channelSlug11accountName0F2Id11environment8delegate8language07foreignH004userG09customUrlACSS_S2SAA14ITGEnvironmentVAA0B8Delegate_pSgS2SSgA2Qtcfc",
+            "moduleName": "Inthegamemobile",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "videoPlaying",
+            "printedName": "videoPlaying(time:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Inthegamemobile14ITGOverlayViewC12videoPlaying4timeySd_tF",
+            "mangledName": "$s15Inthegamemobile14ITGOverlayViewC12videoPlaying4timeySd_tF",
+            "moduleName": "Inthegamemobile",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateOverlayTime",
+            "printedName": "updateOverlayTime()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Inthegamemobile14ITGOverlayViewC17updateOverlayTimeyyF",
+            "mangledName": "$s15Inthegamemobile14ITGOverlayViewC17updateOverlayTimeyyF",
+            "moduleName": "Inthegamemobile",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "point",
+            "printedName": "point(inside:with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGPoint",
+                "printedName": "CoreFoundation.CGPoint",
+                "usr": "c:@S@CGPoint"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIEvent?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIEvent",
+                    "printedName": "UIKit.UIEvent",
+                    "usr": "c:objc(cs)UIEvent"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Inthegamemobile@objc(cs)ITGOverlayView(im)pointInside:withEvent:",
+            "mangledName": "$s15Inthegamemobile14ITGOverlayViewC5point6inside4withSbSo7CGPointV_So7UIEventCSgtF",
+            "moduleName": "Inthegamemobile",
+            "overriding": true,
+            "objc_name": "pointInside:withEvent:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "hasContentAtPoint",
+            "printedName": "hasContentAtPoint(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGPoint",
+                "printedName": "CoreFoundation.CGPoint",
+                "usr": "c:@S@CGPoint"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Inthegamemobile14ITGOverlayViewC17hasContentAtPointySbSo7CGPointVF",
+            "mangledName": "$s15Inthegamemobile14ITGOverlayViewC17hasContentAtPointySbSo7CGPointVF",
+            "moduleName": "Inthegamemobile",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "gestureRecognizer",
+            "printedName": "gestureRecognizer(_:shouldRecognizeSimultaneouslyWith:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIGestureRecognizer",
+                "printedName": "UIKit.UIGestureRecognizer",
+                "usr": "c:objc(cs)UIGestureRecognizer"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIGestureRecognizer",
+                "printedName": "UIKit.UIGestureRecognizer",
+                "usr": "c:objc(cs)UIGestureRecognizer"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Inthegamemobile@objc(cs)ITGOverlayView(im)gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:",
+            "mangledName": "$s15Inthegamemobile14ITGOverlayViewC17gestureRecognizer_33shouldRecognizeSimultaneouslyWithSbSo09UIGestureE0C_AGtF",
+            "moduleName": "Inthegamemobile",
+            "objc_name": "gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:",
+            "declAttributes": [
+              "ObjC",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "shutdown",
+            "printedName": "shutdown()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Inthegamemobile14ITGOverlayViewC8shutdownyyF",
+            "mangledName": "$s15Inthegamemobile14ITGOverlayViewC8shutdownyyF",
+            "moduleName": "Inthegamemobile",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setLiveMode",
+            "printedName": "setLiveMode(enabled:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Inthegamemobile14ITGOverlayViewC11setLiveMode7enabledySb_tF",
+            "mangledName": "$s15Inthegamemobile14ITGOverlayViewC11setLiveMode7enabledySb_tF",
+            "moduleName": "Inthegamemobile",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webView",
+            "printedName": "webView(_:decidePolicyFor:decisionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKNavigationResponse",
+                "printedName": "WebKit.WKNavigationResponse",
+                "usr": "c:objc(cs)WKNavigationResponse"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WebKit.WKNavigationResponsePolicy) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKNavigationResponsePolicy",
+                    "printedName": "WebKit.WKNavigationResponsePolicy",
+                    "usr": "c:@E@WKNavigationResponsePolicy"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Inthegamemobile@objc(cs)ITGOverlayView(im)webView:decidePolicyForNavigationResponse:decisionHandler:",
+            "mangledName": "$s15Inthegamemobile14ITGOverlayViewC03webC0_15decidePolicyFor15decisionHandlerySo05WKWebC0C_So20WKNavigationResponseCySo0klF0VctF",
+            "moduleName": "Inthegamemobile",
+            "objc_name": "webView:decidePolicyForNavigationResponse:decisionHandler:",
+            "declAttributes": [
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webView",
+            "printedName": "webView(_:didFinish:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "WebKit.WKNavigation?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKNavigation",
+                    "printedName": "WebKit.WKNavigation",
+                    "usr": "c:objc(cs)WKNavigation"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Inthegamemobile@objc(cs)ITGOverlayView(im)webView:didFinishNavigation:",
+            "mangledName": "$s15Inthegamemobile14ITGOverlayViewC03webC0_9didFinishySo05WKWebC0C_So12WKNavigationCSgtF",
+            "moduleName": "Inthegamemobile",
+            "objc_name": "webView:didFinishNavigation:",
+            "declAttributes": [
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webView",
+            "printedName": "webView(_:createWebViewWith:for:windowFeatures:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "WebKit.WKWebView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKWebView",
+                    "printedName": "WebKit.WKWebView",
+                    "usr": "c:objc(cs)WKWebView"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebViewConfiguration",
+                "printedName": "WebKit.WKWebViewConfiguration",
+                "usr": "c:objc(cs)WKWebViewConfiguration"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKNavigationAction",
+                "printedName": "WebKit.WKNavigationAction",
+                "usr": "c:objc(cs)WKNavigationAction"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWindowFeatures",
+                "printedName": "WebKit.WKWindowFeatures",
+                "usr": "c:objc(cs)WKWindowFeatures"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Inthegamemobile@objc(cs)ITGOverlayView(im)webView:createWebViewWithConfiguration:forNavigationAction:windowFeatures:",
+            "mangledName": "$s15Inthegamemobile14ITGOverlayViewC03webC0_09createWebC4With3for14windowFeaturesSo05WKWebC0CSgAI_So0kC13ConfigurationCSo18WKNavigationActionCSo08WKWindowJ0CtF",
+            "moduleName": "Inthegamemobile",
+            "objc_name": "webView:createWebViewWithConfiguration:forNavigationAction:windowFeatures:",
+            "declAttributes": [
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "userContentController",
+            "printedName": "userContentController(_:didReceive:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKUserContentController",
+                "printedName": "WebKit.WKUserContentController",
+                "usr": "c:objc(cs)WKUserContentController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKScriptMessage",
+                "printedName": "WebKit.WKScriptMessage",
+                "usr": "c:objc(cs)WKScriptMessage"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Inthegamemobile@objc(cs)ITGOverlayView(im)userContentController:didReceiveScriptMessage:",
+            "mangledName": "$s15Inthegamemobile14ITGOverlayViewC21userContentController_10didReceiveySo06WKUsereF0C_So15WKScriptMessageCtF",
+            "moduleName": "Inthegamemobile",
+            "objc_name": "userContentController:didReceiveScriptMessage:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Inthegamemobile@objc(cs)ITGOverlayView",
+        "mangledName": "$s15Inthegamemobile14ITGOverlayViewC",
+        "moduleName": "Inthegamemobile",
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIView",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Inthegamemobile",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ChannelInfo",
+        "printedName": "ChannelInfo",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ChannelInfo",
+                "printedName": "Inthegamemobile.ChannelInfo",
+                "usr": "s:15Inthegamemobile11ChannelInfoV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15Inthegamemobile11ChannelInfoV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s15Inthegamemobile11ChannelInfoV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "Inthegamemobile",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:15Inthegamemobile11ChannelInfoV",
+        "mangledName": "$s15Inthegamemobile11ChannelInfoV",
+        "moduleName": "Inthegamemobile",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Inthegamemobile",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ITGTools",
+        "printedName": "ITGTools",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "getVideoURL",
+            "printedName": "getVideoURL(channelSlug:accountId:language:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String?, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.String?, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Inthegamemobile8ITGToolsC11getVideoURL11channelSlug9accountId8language10completionySS_S2SySSSg_s5Error_pSgtctFZ",
+            "mangledName": "$s15Inthegamemobile8ITGToolsC11getVideoURL11channelSlug9accountId8language10completionySS_S2SySSSg_s5Error_pSgtctFZ",
+            "moduleName": "Inthegamemobile",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ITGTools",
+                "printedName": "Inthegamemobile.ITGTools",
+                "usr": "c:@M@Inthegamemobile@objc(cs)ITGTools"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Inthegamemobile@objc(cs)ITGTools(im)init",
+            "mangledName": "$s15Inthegamemobile8ITGToolsCACycfc",
+            "moduleName": "Inthegamemobile",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Inthegamemobile@objc(cs)ITGTools",
+        "mangledName": "$s15Inthegamemobile8ITGToolsC",
+        "moduleName": "Inthegamemobile",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/ITGServiceManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4458,
+      "length": 5,
+      "value": "\"GET\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/ITGServiceManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4480,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/ITGServiceManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4502,
+      "length": 5,
+      "value": "\"PUT\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/ITGServiceManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4525,
+      "length": 7,
+      "value": "\"PATCH\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/ITGServiceManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4458,
+      "length": 5,
+      "value": "\"GET\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/ITGServiceManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4480,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/ITGServiceManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4502,
+      "length": 5,
+      "value": "\"PUT\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/ITGServiceManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4525,
+      "length": 7,
+      "value": "\"PATCH\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/ITGEnvironment.swift",
+      "kind": "StringLiteral",
+      "offset": 517,
+      "length": 45,
+      "value": "\"https:\/\/openapi-dev.inthegame.io\/dev\/api\/v2\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/ITGEnvironment.swift",
+      "kind": "StringLiteral",
+      "offset": 586,
+      "length": 28,
+      "value": "\"https:\/\/media.inthegame.io\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/ITGEnvironment.swift",
+      "kind": "StringLiteral",
+      "offset": 633,
+      "length": 5,
+      "value": "\"dev\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/ITGEnvironment.swift",
+      "kind": "StringLiteral",
+      "offset": 715,
+      "length": 46,
+      "value": "\"https:\/\/openapi-dev.inthegame.io\/test\/api\/v2\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/ITGEnvironment.swift",
+      "kind": "StringLiteral",
+      "offset": 785,
+      "length": 28,
+      "value": "\"https:\/\/media.inthegame.io\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/ITGEnvironment.swift",
+      "kind": "StringLiteral",
+      "offset": 832,
+      "length": 6,
+      "value": "\"test\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/ITGEnvironment.swift",
+      "kind": "StringLiteral",
+      "offset": 916,
+      "length": 47,
+      "value": "\"https:\/\/openapi-dev.inthegame.io\/stage\/api\/v2\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/ITGEnvironment.swift",
+      "kind": "StringLiteral",
+      "offset": 987,
+      "length": 28,
+      "value": "\"https:\/\/media.inthegame.io\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/ITGEnvironment.swift",
+      "kind": "StringLiteral",
+      "offset": 1034,
+      "length": 7,
+      "value": "\"stage\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/ITGEnvironment.swift",
+      "kind": "StringLiteral",
+      "offset": 1118,
+      "length": 46,
+      "value": "\"https:\/\/openapi-dev.inthegame.io\/prod\/api\/v2\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/ITGEnvironment.swift",
+      "kind": "StringLiteral",
+      "offset": 1188,
+      "length": 28,
+      "value": "\"https:\/\/media.inthegame.io\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/ITGEnvironment.swift",
+      "kind": "StringLiteral",
+      "offset": 1235,
+      "length": 6,
+      "value": "\"prod\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2945,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3037,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3323,
+      "length": 9,
+      "value": "\"iPod5,1\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3373,
+      "length": 29,
+      "value": "\"iPod touch (5th generation)\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3420,
+      "length": 9,
+      "value": "\"iPod7,1\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3470,
+      "length": 29,
+      "value": "\"iPod touch (6th generation)\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3517,
+      "length": 9,
+      "value": "\"iPod9,1\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3567,
+      "length": 29,
+      "value": "\"iPod touch (7th generation)\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3614,
+      "length": 11,
+      "value": "\"iPhone3,1\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3627,
+      "length": 11,
+      "value": "\"iPhone3,2\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3640,
+      "length": 11,
+      "value": "\"iPhone3,3\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3664,
+      "length": 10,
+      "value": "\"iPhone 4\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3692,
+      "length": 11,
+      "value": "\"iPhone4,1\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3742,
+      "length": 11,
+      "value": "\"iPhone 4s\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3771,
+      "length": 11,
+      "value": "\"iPhone5,1\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3784,
+      "length": 11,
+      "value": "\"iPhone5,2\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3821,
+      "length": 10,
+      "value": "\"iPhone 5\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3849,
+      "length": 11,
+      "value": "\"iPhone5,3\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3862,
+      "length": 11,
+      "value": "\"iPhone5,4\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3899,
+      "length": 11,
+      "value": "\"iPhone 5c\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3928,
+      "length": 11,
+      "value": "\"iPhone6,1\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3941,
+      "length": 11,
+      "value": "\"iPhone6,2\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3978,
+      "length": 11,
+      "value": "\"iPhone 5s\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 4007,
+      "length": 11,
+      "value": "\"iPhone7,2\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 4057,
+      "length": 10,
+      "value": "\"iPhone 6\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 4085,
+      "length": 11,
+      "value": "\"iPhone7,1\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 4135,
+      "length": 15,
+      "value": "\"iPhone 6 Plus\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 4168,
+      "length": 11,
+      "value": "\"iPhone8,1\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 4218,
+      "length": 11,
+      "value": "\"iPhone 6s\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 4247,
+      "length": 11,
+      "value": "\"iPhone8,2\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 4297,
+      "length": 16,
+      "value": "\"iPhone 6s Plus\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 4331,
+      "length": 11,
+      "value": "\"iPhone9,1\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 4344,
+      "length": 11,
+      "value": "\"iPhone9,3\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 4381,
+      "length": 10,
+      "value": "\"iPhone 7\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 4409,
+      "length": 11,
+      "value": "\"iPhone9,2\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 4422,
+      "length": 11,
+      "value": "\"iPhone9,4\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 4459,
+      "length": 15,
+      "value": "\"iPhone 7 Plus\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 4492,
+      "length": 11,
+      "value": "\"iPhone8,4\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 4542,
+      "length": 11,
+      "value": "\"iPhone SE\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 4571,
+      "length": 12,
+      "value": "\"iPhone10,1\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 4585,
+      "length": 12,
+      "value": "\"iPhone10,4\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 4621,
+      "length": 10,
+      "value": "\"iPhone 8\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 4649,
+      "length": 12,
+      "value": "\"iPhone10,2\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 4663,
+      "length": 12,
+      "value": "\"iPhone10,5\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 4699,
+      "length": 15,
+      "value": "\"iPhone 8 Plus\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 4732,
+      "length": 12,
+      "value": "\"iPhone10,3\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 4746,
+      "length": 12,
+      "value": "\"iPhone10,6\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 4782,
+      "length": 10,
+      "value": "\"iPhone X\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 4810,
+      "length": 12,
+      "value": "\"iPhone11,2\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 4860,
+      "length": 11,
+      "value": "\"iPhone XS\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 4889,
+      "length": 12,
+      "value": "\"iPhone11,4\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 4903,
+      "length": 12,
+      "value": "\"iPhone11,6\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 4939,
+      "length": 15,
+      "value": "\"iPhone XS Max\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 4972,
+      "length": 12,
+      "value": "\"iPhone11,8\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 5022,
+      "length": 11,
+      "value": "\"iPhone XR\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 5051,
+      "length": 12,
+      "value": "\"iPhone12,1\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 5101,
+      "length": 11,
+      "value": "\"iPhone 11\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 5130,
+      "length": 12,
+      "value": "\"iPhone12,3\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 5180,
+      "length": 15,
+      "value": "\"iPhone 11 Pro\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 5213,
+      "length": 12,
+      "value": "\"iPhone12,5\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 5263,
+      "length": 19,
+      "value": "\"iPhone 11 Pro Max\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 5300,
+      "length": 9,
+      "value": "\"iPad2,1\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 5311,
+      "length": 9,
+      "value": "\"iPad2,2\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 5322,
+      "length": 9,
+      "value": "\"iPad2,3\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 5333,
+      "length": 9,
+      "value": "\"iPad2,4\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 5350,
+      "length": 8,
+      "value": "\"iPad 2\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 5376,
+      "length": 9,
+      "value": "\"iPad3,1\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 5387,
+      "length": 9,
+      "value": "\"iPad3,2\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 5398,
+      "length": 9,
+      "value": "\"iPad3,3\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 5426,
+      "length": 23,
+      "value": "\"iPad (3rd generation)\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 5467,
+      "length": 9,
+      "value": "\"iPad3,4\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 5478,
+      "length": 9,
+      "value": "\"iPad3,5\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 5489,
+      "length": 9,
+      "value": "\"iPad3,6\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 5517,
+      "length": 23,
+      "value": "\"iPad (4th generation)\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 5558,
+      "length": 10,
+      "value": "\"iPad6,11\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 5570,
+      "length": 10,
+      "value": "\"iPad6,12\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 5608,
+      "length": 23,
+      "value": "\"iPad (5th generation)\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 5649,
+      "length": 9,
+      "value": "\"iPad7,5\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 5660,
+      "length": 9,
+      "value": "\"iPad7,6\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 5699,
+      "length": 23,
+      "value": "\"iPad (6th generation)\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 5740,
+      "length": 10,
+      "value": "\"iPad7,11\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 5752,
+      "length": 10,
+      "value": "\"iPad7,12\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 5790,
+      "length": 23,
+      "value": "\"iPad (7th generation)\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 5831,
+      "length": 9,
+      "value": "\"iPad4,1\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 5842,
+      "length": 9,
+      "value": "\"iPad4,2\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 5853,
+      "length": 9,
+      "value": "\"iPad4,3\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 5881,
+      "length": 10,
+      "value": "\"iPad Air\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 5909,
+      "length": 9,
+      "value": "\"iPad5,3\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 5920,
+      "length": 9,
+      "value": "\"iPad5,4\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 5959,
+      "length": 12,
+      "value": "\"iPad Air 2\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 5989,
+      "length": 10,
+      "value": "\"iPad11,4\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6001,
+      "length": 10,
+      "value": "\"iPad11,5\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6039,
+      "length": 27,
+      "value": "\"iPad Air (3rd generation)\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6084,
+      "length": 9,
+      "value": "\"iPad2,5\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6095,
+      "length": 9,
+      "value": "\"iPad2,6\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6106,
+      "length": 9,
+      "value": "\"iPad2,7\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6134,
+      "length": 11,
+      "value": "\"iPad mini\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6163,
+      "length": 9,
+      "value": "\"iPad4,4\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6174,
+      "length": 9,
+      "value": "\"iPad4,5\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6185,
+      "length": 9,
+      "value": "\"iPad4,6\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6213,
+      "length": 13,
+      "value": "\"iPad mini 2\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6244,
+      "length": 9,
+      "value": "\"iPad4,7\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6255,
+      "length": 9,
+      "value": "\"iPad4,8\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6266,
+      "length": 9,
+      "value": "\"iPad4,9\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6294,
+      "length": 13,
+      "value": "\"iPad mini 3\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6325,
+      "length": 9,
+      "value": "\"iPad5,1\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6336,
+      "length": 9,
+      "value": "\"iPad5,2\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6375,
+      "length": 13,
+      "value": "\"iPad mini 4\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6406,
+      "length": 10,
+      "value": "\"iPad11,1\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6418,
+      "length": 10,
+      "value": "\"iPad11,2\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6456,
+      "length": 28,
+      "value": "\"iPad mini (5th generation)\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6502,
+      "length": 9,
+      "value": "\"iPad6,3\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6513,
+      "length": 9,
+      "value": "\"iPad6,4\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6552,
+      "length": 21,
+      "value": "\"iPad Pro (9.7-inch)\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6591,
+      "length": 9,
+      "value": "\"iPad6,7\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6602,
+      "length": 9,
+      "value": "\"iPad6,8\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6641,
+      "length": 22,
+      "value": "\"iPad Pro (12.9-inch)\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6681,
+      "length": 9,
+      "value": "\"iPad7,1\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6692,
+      "length": 9,
+      "value": "\"iPad7,2\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6731,
+      "length": 39,
+      "value": "\"iPad Pro (12.9-inch) (2nd generation)\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6788,
+      "length": 9,
+      "value": "\"iPad7,3\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6799,
+      "length": 9,
+      "value": "\"iPad7,4\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6838,
+      "length": 22,
+      "value": "\"iPad Pro (10.5-inch)\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6878,
+      "length": 9,
+      "value": "\"iPad8,1\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6889,
+      "length": 9,
+      "value": "\"iPad8,2\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6900,
+      "length": 9,
+      "value": "\"iPad8,3\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6911,
+      "length": 9,
+      "value": "\"iPad8,4\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6928,
+      "length": 20,
+      "value": "\"iPad Pro (11-inch)\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6966,
+      "length": 9,
+      "value": "\"iPad8,5\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6977,
+      "length": 9,
+      "value": "\"iPad8,6\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6988,
+      "length": 9,
+      "value": "\"iPad8,7\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6999,
+      "length": 9,
+      "value": "\"iPad8,8\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 7016,
+      "length": 39,
+      "value": "\"iPad Pro (12.9-inch) (3rd generation)\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 7073,
+      "length": 12,
+      "value": "\"AppleTV5,3\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 7123,
+      "length": 10,
+      "value": "\"Apple TV\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 7151,
+      "length": 12,
+      "value": "\"AppleTV6,2\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 7201,
+      "length": 13,
+      "value": "\"Apple TV 4K\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 7232,
+      "length": 19,
+      "value": "\"AudioAccessory1,1\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 7282,
+      "length": 9,
+      "value": "\"HomePod\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 7309,
+      "length": 6,
+      "value": "\"i386\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 7317,
+      "length": 8,
+      "value": "\"x86_64\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 7359,
+      "length": 104,
+      "value": "\"Simulator \""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 7422,
+      "length": 28,
+      "value": "\"SIMULATOR_MODEL_IDENTIFIER\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 7455,
+      "length": 5,
+      "value": "\"iOS\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 7462,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/ITGOverlayView.swift",
+      "kind": "StringLiteral",
+      "offset": 262,
+      "length": 6,
+      "value": "\"time\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/ITGOverlayView.swift",
+      "kind": "StringLiteral",
+      "offset": 756,
+      "length": 4,
+      "value": "\"en\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/ITGOverlayView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 940,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/ITGOverlayView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1143,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/ITGOverlayView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1169,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/ITGOverlayView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1204,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/ITGOverlayView.swift",
+      "kind": "StringLiteral",
+      "offset": 1367,
+      "length": 4,
+      "value": "\"en\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 171,
+      "length": 26,
+      "value": "\"com.syncedapps.inthegame\""
+    }
+  ]
+}

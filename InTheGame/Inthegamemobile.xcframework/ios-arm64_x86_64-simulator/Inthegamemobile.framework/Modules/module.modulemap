@@ -6,6 +6,6 @@ framework module Inthegamemobile {
 }
 
 module Inthegamemobile.Swift {
-    header "Inthegamemobile-Swift.h"
-    requires objc
+  header "Inthegamemobile-Swift.h"
+  requires objc
 }
