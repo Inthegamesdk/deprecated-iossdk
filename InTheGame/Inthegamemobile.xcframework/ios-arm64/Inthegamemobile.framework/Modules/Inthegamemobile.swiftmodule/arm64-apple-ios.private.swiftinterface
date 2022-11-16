@@ -28,6 +28,8 @@ public protocol ITGOverlayDelegate : ObjectiveC.NSObject {
   func overlayPause()
   func overlayResume()
   func getVideoTime() -> Swift.Double
+  func overlayReceivedLink(_ link: Swift.String)
+  func overlayRequestedVideoSeek(time: Swift.Double)
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class ITGOverlayView : UIKit.UIView, WebKit.WKUIDelegate, WebKit.WKNavigationDelegate, UIKit.UIGestureRecognizerDelegate {
   @_Concurrency.MainActor(unsafe) weak public var delegate: Inthegamemobile.ITGOverlayDelegate?

@@ -575,6 +575,60 @@
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "overlayReceivedLink",
+            "printedName": "overlayReceivedLink(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Inthegamemobile18ITGOverlayDelegateP19overlayReceivedLinkyySSF",
+            "mangledName": "$s15Inthegamemobile18ITGOverlayDelegateP19overlayReceivedLinkyySSF",
+            "moduleName": "Inthegamemobile",
+            "genericSig": "<τ_0_0 where τ_0_0 : Inthegamemobile.ITGOverlayDelegate>",
+            "sugared_genericSig": "<Self where Self : Inthegamemobile.ITGOverlayDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "overlayRequestedVideoSeek",
+            "printedName": "overlayRequestedVideoSeek(time:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Inthegamemobile18ITGOverlayDelegateP25overlayRequestedVideoSeek4timeySd_tF",
+            "mangledName": "$s15Inthegamemobile18ITGOverlayDelegateP25overlayRequestedVideoSeek4timeySd_tF",
+            "moduleName": "Inthegamemobile",
+            "genericSig": "<τ_0_0 where τ_0_0 : Inthegamemobile.ITGOverlayDelegate>",
+            "sugared_genericSig": "<Self where Self : Inthegamemobile.ITGOverlayDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -2705,42 +2759,42 @@
     {
       "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 756,
+      "offset": 850,
       "length": 4,
       "value": "\"en\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 940,
+      "offset": 1034,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1143,
+      "offset": 1237,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1169,
+      "offset": 1263,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1204,
+      "offset": 1298,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/InthegameWeb\/InthegameMobileDemo\/Inthegamemobile\/Inthegamemobile\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 1367,
+      "offset": 1461,
       "length": 4,
       "value": "\"en\""
     },

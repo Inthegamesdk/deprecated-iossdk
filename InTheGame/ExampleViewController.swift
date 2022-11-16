@@ -72,6 +72,16 @@ class ExampleViewController: UIViewController {
 
 extension ExampleViewController: ITGOverlayDelegate {
     
+    func overlayReceivedLink(_ link: String) {
+        if let url = URL(string: link), UIApplication.shared.canOpenURL(url) {
+            UIApplication.shared.open(url, options: [:])
+        }
+    }
+    
+    func overlayRequestedVideoSeek(time: Double) {
+        self.playerView?.player?.seek(to: CMTimeMakeWithSeconds(time, preferredTimescale: 60000))
+    }
+    
     //called when the overlay shows a new activity
     func overlayWillOpenActivity(height: CGFloat) {
     
